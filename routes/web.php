@@ -9,8 +9,9 @@ Route::group(['prefix' => '/2'], function () {
     Route::post('/', function (\Illuminate\Http\Request $request) {
 
         $postData = [
-            'diagnosis' => $request->get('diagnosis'),
-            '3_months' => $request->get('3_months'),
+            'diagnosed_when' => $request->get('diagnosed_when'),
+            'under_65' => $request->get('under_65'),
+            'over_4_years' => $request->get('over_4_years'),
             'has_attorney' => $request->get('has_attorney'),
             'first_name' => $request->get('first_name'),
             'last_name' => $request->get('last_name'),
@@ -69,7 +70,7 @@ Route::group(['prefix' => '/2'], function () {
 
         $response = $request->getBody()->getContents();
 
-        return redirect()->route('1.thanks');
+        return redirect()->route('2.thanks');
 
     })->name('2.post-lead');
 
