@@ -61,6 +61,7 @@
 
 <script src="/1/sm/js/form_methods/talc2.7a9623981b45.js"></script>
 
+@yield('body_extra')
 
 </body>
 </html>

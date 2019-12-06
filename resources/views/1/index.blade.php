@@ -142,3 +142,40 @@
         </div>
     </div>
 @endsection
+
+@section('body_extra')
+
+    <script>
+        $(document).ready(function () {
+
+            $('#slide1 .form-btn').on('click', function () {
+                console.log(this.innerText);
+                $('input[name="medicine_taken"]').val(this.innerText);
+                $("#slide1").addClass("hidden");
+                $("#slide2").removeClass("hidden");
+            });
+
+            $('#slide2 .form-btn').on('click', function () {
+                console.log(this.innerText);
+                $('input[name="medicine_duration"]').val(this.innerText);
+                $("#slide2").addClass("hidden");
+                $("#slide3").removeClass("hidden");
+            });
+
+            $('#slide3 .form-btn').on('click', function () {
+                console.log(this.innerText);
+                $('input[name="diagnosis"]').val(this.innerText);
+                $("#slide3").addClass("hidden");
+                $("#slide4").removeClass("hidden");
+            });
+
+            $('#slide4 .form-btn').on('click', function () {
+                console.log(this.innerText);
+                $('input[name="has_attorney"]').val(this.innerText);
+                $("#slide4").addClass("hidden");
+                $("#slide5").removeClass("hidden");
+            });
+
+        });
+    </script>
+@endsection
