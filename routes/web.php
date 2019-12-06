@@ -3,7 +3,7 @@
 Route::group(['prefix' => '/2'], function () {
 
     Route::get('/', function () {
-        return view('2.index');
+        return view('1.index');
     })->name('2.index');
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
@@ -74,7 +74,7 @@ Route::group(['prefix' => '/2'], function () {
     })->name('2.post-lead');
 
     Route::get('/thanks', function () {
-        return view('2.thanks');
+        return view('1.thanks');
     })->name('2.thanks');
 
 });
