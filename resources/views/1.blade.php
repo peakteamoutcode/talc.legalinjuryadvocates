@@ -14,7 +14,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/2/sm/css/talc2.49fd75d6a377.css" rel="stylesheet">
+    <link href="/1/sm/css/talc2.49fd75d6a377.css" rel="stylesheet">
 </head>
 <body>
 
@@ -57,12 +57,12 @@
         jQuery('.zip_code').mask('00000');
     });
 </script>
-<script src="/2/sm/js/jquery_mask.730c38e02fd3.js"></script>
-<script src="/2/sm/js/jquery.validate.min.24ae1ca673cb.js"></script>
-<script src="/2/sm/js/additional-methods.min.d95f4f840a79.js"></script>
-<script src="/2/sm/js/basic_form_validation.ad2781474e72.js"></script>
+<script src="/1/sm/js/jquery_mask.730c38e02fd3.js"></script>
+<script src="/1/sm/js/jquery.validate.min.24ae1ca673cb.js"></script>
+<script src="/1/sm/js/additional-methods.min.d95f4f840a79.js"></script>
+<script src="/1/sm/js/basic_form_validation.ad2781474e72.js"></script>
 
-<script src="/2/sm/js/form_methods/talc2.7a9623981b45.js"></script>
+<script src="/1/sm/js/form_methods/talc2.7a9623981b45.js"></script>
 
 
 </body>
