@@ -1,0 +1,148 @@
+@extends('1')
+
+@section('content')
+    <div class="row">
+        <div class="col-xs-12">
+            <div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 visible-xs-block" style="padding:2% 2% 0 2%;"><img src="/1/sm/img/ja-logo.88f9ead28caf.png">
+                        <div class="cta-question" style="margin-bottom:-25px;"><img src="/1/sm/img/ribbonOC3-sm2.8085f966f224.png"  align="left"><h2 style="margin-top:10px;font-size: 20px; font-weight:100;line-height: 22px;c">Were you harmed by dangerous <span style="font-weight:bold;">talcum powder</span>?</h2>
+                            <h2 style="color:#00a776;font-size: 14px;line-height:16px; margin-top:5px;">Finding out if you are eligible for a large settlement for your Ovarian Cancer claim is <span>free, fast and easy!</span></h2>
+                            <div class="visible-md-block visible-lg-block">
+                                <div class="bullets">
+                                    <ul>
+                                        <li>If you have been harmed by talcum powder <span style="color:#00a776;"><i>we can help!</i></span></li>
+                                        <li><span style="color:#00a776;"><i>Don't Delay!</i></span> There may be a limited time to file your claim! Get the information you need and the justice you deserve!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-1 visible-sm-block visible-md-block visible-lg-block"></div>
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 visible-sm-block visible-md-block visible-lg-block" style="padding:2%;"><img src="/1/sm/img/ja-logo.88f9ead28caf.png">
+                        <div class="cta-question"><img src="/1/sm/img/ribbonOC.b8a8c23ce608.png"  align="left"><h2 style="margin-top:40px;font-size: 3em; font-weight:100;line-height: 1em;">Were you harmed by dangerous <span style=";font-weight:bold;">talcum powder</span>?<br></h2>
+                            <h2 style="color:#00a776;font-size: 2em;line-height:1em">You may be entitled to a financial award!!</h2>
+                            <div class="visible-md-block visible-lg-block">
+                                <div class="bullets">
+                                    <ul>
+                                        <li>If you have been harmed by talcum powder <span style="color:#00a776;"><i>we can help!</i></span></li>
+                                        <li><span style="color:#00a776;"><i>Don't Delay!</i></span> There may be a limited time to file your claim! Get the information you need and the justice you deserve!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                        <div class="lead-capture">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background: rgba(255,255,255,0.8); border-radius: 4px;margin-top:15px;">
+                                    <div class="head text-center visible-xs-block">
+                                        <h4 style="font-size: 18px;color:#032c62";>Free Claim Eligibility Review</h4>
+                                    </div>
+                                    <div class="head text-center visible-sm-block visible-md-block visible-lg-block">
+                                        <h4 style="font-size: 30px;color:#032c62";>Free Claim Eligibility Review</h4>
+
+                                    </div>
+                                    <form name="basic-form" id="basic-form" class="" action="https://securejag.com/d.ashx" method="post" novalidate="novalidate">
+                                        <input type="hidden" name="ckm_offer_id" value="44">
+                                        <input type="hidden" name="use_talc_4_years" id="use_talc_4_years" value="">
+                                        <input type="hidden" name="diagnosed_ovarian_cancer" id="diagnosed_ovarian_cancer" value="">
+                                        <input type="hidden" name="under_65_when_diagnosed" id="under_65_when_diagnosed" value="">
+                                        <input type="hidden" name="lawyer" id="lawyer" value="">
+                                        <div id="slide1">
+                                            <div class="visible-xs-block">
+                                                <p>When were you or a loved one diagnosed with Ovarian Cancer?</p>
+                                            </div>
+                                            <div class="visible-sm-block visible-md-block visible-lg-block">
+                                                <p>When were you or a loved one diagnosed with Ovarian Cancer?</p>
+                                                <p>Finding out if you are eligible for a large settlement for your Ovarian Cancer claim is <span>free, fast and easy!</span></p></div>
+                                            <button type="button" id="after_2003" class="form-btn form-btn-yes">2003 - 2019</button>
+                                            <button type="button" id="before_2003" class="form-btn form-btn-yes">BEFORE 2003</button>
+                                            <button type="button" id="not_diagnosed" class="form-btn form-btn-no">Not Diagnosed</button>
+                                        </div>
+                                        <div id="slide2" class="hidden">
+                                            <p>Were you under the age of 65 when diagnosed?</p>
+                                            <button type="button" id="under_65_yes" class="form-btn form-btn-yes">YES - CONTINUE</button>
+                                            <button type="button" id="under_65_no" class="form-btn form-btn-no">No</button>
+                                        </div>
+                                        <div id="slide3" class="hidden">
+                                            <p>Was talc powder used for more than 4 years?</p>
+                                            <button type="button" id="yes_talc" class="form-btn form-btn-yes">YES - CONTINUE</button>
+                                            <button type="button" id="no_talc" class="form-btn form-btn-no">No</button>
+                                        </div>
+                                        <div id="slide4" class="hidden">
+                                            <p>Do you have a lawyer for your claim?</p>
+                                            <button type="button" id="lawyer_yes" class="form-btn form-btn-yes">Yes</button>
+                                            <button type="button" id="lawyer_no" class="form-btn form-btn-no">No</button>
+                                        </div>
+                                        <div id="slide5" class="hidden">
+                                            <div class="grouping">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <input type="text" class="big" name="first_name" id="first_name" placeholder="First Name">
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <input type="text" class="big" name="last_name" id="last_name" placeholder="Last Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grouping">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <input type="text" class="big phone_us" name="phone_cell" id="phone_cell" placeholder="Phone" maxlength="14">
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <input type="text" class="big phone_us" name="phone_home" id="phone_home" placeholder="Confirm Phone" maxlength="14">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grouping">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <input type="text" class="big zip_code" name="zip_code" id="zip_code" placeholder="Zip" maxlength="5">
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <input type="email" class="big" name="email_address" id="email_address" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grouping">
+                                                <textarea class="" name="notes" id="notes" rows="2" placeholder="Help us better understand by providing more details."></textarea>
+                                            </div>
+                                            <div class="grouping">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" name="opt_in" id="opt_in" value="1"><div class="tcpa">By checking this box, you agree to our <a href="../../terms-of-use/index.html"  target="_blank">Terms of Use</a> and that The Justice Advocates, a third party verification service and up to 3 law firms you are matched with may contact you about their services at your above phone number(s) even if it is on a National or State Do Not Call List.  Calls/texts may employ automated dialing technology and prerecorded/artificial voice messages.  I understand my consent is not a condition of any purchase.</div>
+
+                                                </label>
+                                            </div>
+                                            <div class="grouping">
+                                                <button type="submit" id="" class="form-btn form-btn-yes">Review My Claim!</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="visible-xs-block">
+        <div class="bullets">
+            <ul>
+                <li>If you have been harmed by talcum powder <span style="color:#00a776;"><i>we can help!</i></span></li>
+                <li><span style="color:#00a776;"><i>Don't Delay!</i></span> There may be a limited time to file your claim! Get the information you need and the justice you deserve!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row disclaimers text-center">
+        <div class="col-xs-12">
+            <hr>
+            <p style="color:#444;">This is an advertisement. The Justice Advocates is not a law firm or referral service and does not provide legal advice. This is a free matching service. We do not recommend or endorse any attorneys that pay to participate. An attorney-client relationship is not formed when you submit information through the form. You are under no obligation to retain a lawyer who contacts you through this service. You should consult a doctor before stopping any medication. The Justice Advocates and this site are not affiliated in any way with Shower to Shower®, Johnson & Johnson Baby Powder, or Baby Magic®. Shower to Shower® is a registered trademark of Valeant Consumer products, a division of Valeant Pharmaceuticals Luxembourg S.À.R.L, Johnson & Johnson Baby Powder is a registered trademark of Johnson & Johnson and Baby Magic® is a registered trademark by Naterra International, Inc.</p>
+        </div>
+    </div>
+@endsection
