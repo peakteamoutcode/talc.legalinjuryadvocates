@@ -138,7 +138,7 @@
     <div class="row disclaimers text-center">
         <div class="col-xs-12">
             <hr>
-            <p style="color:#444;">This is an advertisement. The Justice Advocates is not a law firm or referral service and does not provide legal advice. This is a free matching service. We do not recommend or endorse any attorneys that pay to participate. An attorney-client relationship is not formed when you submit information through the form. You are under no obligation to retain a lawyer who contacts you through this service. You should consult a doctor before stopping any medication. The Justice Advocates and this site are not affiliated in any way with Shower to Shower®, Johnson & Johnson Baby Powder, or Baby Magic®. Shower to Shower® is a registered trademark of Valeant Consumer products, a division of Valeant Pharmaceuticals Luxembourg S.À.R.L, Johnson & Johnson Baby Powder is a registered trademark of Johnson & Johnson and Baby Magic® is a registered trademark by Naterra International, Inc.</p>
+            <p style="color:#444;">This is an advertisement. The Legal Injury Advocate is not a law firm or referral service and does not provide legal advice. This is a free matching service. We do not recommend or endorse any attorneys that pay to participate. An attorney-client relationship is not formed when you submit information through the form. You are under no obligation to retain a lawyer who contacts you through this service.</p>
         </div>
     </div>
 @endsection
