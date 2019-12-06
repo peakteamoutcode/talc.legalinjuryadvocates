@@ -1,4 +1,4 @@
-@extends('1')
+@extends('2')
 
 @section('head_extra')
     <link href="/layouts/2/css/thank-you.css" rel="stylesheet" type="text/css">

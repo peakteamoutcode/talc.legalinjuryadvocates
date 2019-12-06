@@ -1,0 +1,103 @@
+.spaced.personal_injury {
+    background: url("../images/personalinjurymulti.49ac0df8663c.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.spaced.birth_injury {
+    background: url("../images/birthinjurymulti.d4f813677302.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.spaced.invokana {
+    background: url("../images/invokanamulti.2c938cc884ee.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.spaced.onglyza {
+    background: url("../images/onglyzamulti.7c14e9d1d5fc.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.spaced.ppi {
+    background: url("../images/ppimulti.43e2c5eb1793.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.spaced.shoulder {
+    background: url("../images/shouldermulti.df4cf8f8f812.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.spaced.stockert {
+    background: url("../images/stockertmulti.742e31d808a7.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.spaced.target {
+    background: url("../images/about_us.ef17c10f6dc4.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero {
+
+}
+
+.hero h1 {
+    font-size: 80px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    color: #fffc00;
+    margin-top: 40px;
+}
+
+.hero h1.about-header {
+    color: #032c62;
+    margin-top: 35px;
+}
+
+.hero h1.about-header-grn {
+    color: #0b733b;
+    margin-top: 75px;
+}
+
+/* NON-MOBILE DEVICES */
+@media (min-width:768px) {
+    .spaced.target {
+        min-height: 480px;
+    }
+}
+
+/* MOBILE DEVICES */
+@media (max-width:767px) {
+    .spaced {
+        background: none !important;
+    }
+}
