@@ -46,6 +46,8 @@
                                     </div>
                                     <form name="basic-form" id="basic-form" class="" action="/2" method="post" novalidate="novalidate">
 
+                                        @csrf
+
                                         <input type="hidden" name="diagnosed_when" value="">
                                         <input type="hidden" name="under_65" value="">
                                         <input type="hidden" name="over_4_years" value="">
