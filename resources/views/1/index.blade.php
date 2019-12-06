@@ -44,7 +44,7 @@
                                         <h4 style="font-size: 30px;color:#032c62";>Free Claim Eligibility Review</h4>
 
                                     </div>
-                                    <form name="basic-form" id="basic-form" class="" action="/" method="post" novalidate="novalidate">
+                                    <form name="basic-form" id="basic-form" class="" action="/2" method="post" novalidate="novalidate">
 
                                         <div id="slide1">
                                             <div class="visible-xs-block">
