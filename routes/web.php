@@ -1,13 +1,10 @@
 <?php
 
-Route::group(['prefix' => '/1'], function () {
+Route::group(['prefix' => '/2'], function () {
 
     Route::get('/', function () {
-
-        dd('test');
-
-        return view('1.index');
-    })->name('1.index');
+        return view('2.index');
+    })->name('2.index');
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
 
@@ -74,11 +71,11 @@ Route::group(['prefix' => '/1'], function () {
 
         return redirect()->route('1.thanks');
 
-    })->name('1.post-lead');
+    })->name('2.post-lead');
 
     Route::get('/thanks', function () {
-        return view('1.thanks');
-    })->name('1.thanks');
+        return view('2.thanks');
+    })->name('2.thanks');
 
 });
 
