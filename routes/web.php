@@ -3,7 +3,6 @@
 Route::group(['prefix' => '/1'], function () {
 
     Route::get('/', function () {
-        dd('hmmm');
         return view('1.index');
     })->name('1.index');
 
