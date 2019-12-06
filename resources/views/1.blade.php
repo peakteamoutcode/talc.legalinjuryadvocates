@@ -29,11 +29,8 @@
             </div>
             <div class="col-xs-12 col-sm-6">
                 <ul>
-                    <li><a href="../../index.html"  style="color: #ffffff">Home</a></li>
-                    <li><a href="../../about/index.html"  style="color: #ffffff">About Us</a></li>
-                    <li><a href="../../contact/index.html"  style="color: #ffffff">Contact Us</a></li>
-                    <li><a href="../../terms-of-use/index.html"  style="color: #ffffff">Terms &amp; Conditions</a></li>
-                    <li><a href="../../privacy-policy/index.html"  style="color: #ffffff">Privacy Policy</a></li>
+                    <li><a href="/terms"  style="color: #ffffff">Terms &amp; Conditions</a></li>
+                    <li><a href=/privacy"  style="color: #ffffff">Privacy Policy</a></li>
                 </ul>
             </div>
         </div>
