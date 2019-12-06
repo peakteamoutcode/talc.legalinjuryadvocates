@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['prefix' => '1'], function () {
+Route::group(['prefix' => '/1'], function () {
 
     Route::get('/', function () {
 
