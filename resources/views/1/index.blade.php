@@ -48,6 +48,16 @@
 
                                         @csrf
 
+                                        <input type="hidden" name="req_id" value="{{ (isset($_GET['req_id'])) ? $_GET['req_id'] : '' }}">
+                                        <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
+
+                                        <input type="hidden" name="source" value="{{ isset($_GET['source']) ? $_GET['source'] : '' }}">
+                                        <input type="hidden" name="s1" value="{{ isset($_GET['s1']) ? $_GET['s1'] : '' }}">
+                                        <input type="hidden" name="s2" value="{{ isset($_GET['s2']) ? $_GET['s2'] : '' }}">
+                                        <input type="hidden" name="s3" value="{{ isset($_GET['s3']) ? $_GET['s3'] : '' }}">
+                                        <input type="hidden" name="s4" value="{{ isset($_GET['s4']) ? $_GET['s4'] : '' }}">
+                                        <input type="hidden" name="s5" value="{{ isset($_GET['s5']) ? $_GET['s5'] : '' }}">
+
                                         <input type="hidden" name="diagnosed_when" value="">
                                         <input type="hidden" name="under_65" value="">
                                         <input type="hidden" name="over_4_years" value="">
