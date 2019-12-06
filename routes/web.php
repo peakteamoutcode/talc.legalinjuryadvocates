@@ -1,8 +1,11 @@
 <?php
 
-Route::group(['prefix' => '/1'], function () {
+Route::group(['prefix' => '1'], function () {
 
     Route::get('/', function () {
+
+        dd('test');
+
         return view('1.index');
     })->name('1.index');
 
