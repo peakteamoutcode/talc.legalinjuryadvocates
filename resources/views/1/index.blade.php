@@ -5,7 +5,7 @@
         <div class="col-xs-12">
             <div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 visible-xs-block" style="padding:2% 2% 0 2%;"><img src="/1/sm/img/ja-logo.88f9ead28caf.png">
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 visible-xs-block" style="padding:2% 2% 0 2%;"><img src="/1/images/logo.png">
                         <div class="cta-question" style="margin-bottom:-25px;"><img src="/1/sm/img/ribbonOC3-sm2.8085f966f224.png"  align="left"><h2 style="margin-top:10px;font-size: 20px; font-weight:100;line-height: 22px;c">Were you harmed by dangerous <span style="font-weight:bold;">talcum powder</span>?</h2>
                             <h2 style="color:#00a776;font-size: 14px;line-height:16px; margin-top:5px;">Finding out if you are eligible for a large settlement for your Ovarian Cancer claim is <span>free, fast and easy!</span></h2>
                             <div class="visible-md-block visible-lg-block">
