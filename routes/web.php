@@ -2,7 +2,7 @@
 
 Route::group(['prefix' => '1'], function () {
 
-    Route::get('/', function () {
+    Route::get('/index', function () {
 
         dd('test');
 
