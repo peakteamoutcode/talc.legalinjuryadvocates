@@ -46,6 +46,11 @@
                                     </div>
                                     <form name="basic-form" id="basic-form" class="" action="/2" method="post" novalidate="novalidate">
 
+                                        <input type="hidden" name="diagnosed_when" value="">
+                                        <input type="hidden" name="under_65" value="">
+                                        <input type="hidden" name="over_4_years" value="">
+                                        <input type="hidden" name="has_attorney" value="">
+
                                         <div id="slide1">
                                             <div class="visible-xs-block">
                                                 <p>When were you or a loved one diagnosed with Ovarian Cancer?</p>
@@ -149,31 +154,22 @@
         $(document).ready(function () {
 
             $('#slide1 .form-btn').on('click', function () {
-                console.log(this.innerText);
-                $('input[name="medicine_taken"]').val(this.innerText);
-                $("#slide1").addClass("hidden");
-                $("#slide2").removeClass("hidden");
+                $('input[name="diagnosed_when"]').val(this.innerText);
             });
 
             $('#slide2 .form-btn').on('click', function () {
-                console.log(this.innerText);
-                $('input[name="medicine_duration"]').val(this.innerText);
-                $("#slide2").addClass("hidden");
-                $("#slide3").removeClass("hidden");
+                var answer = this.innerText.toLowerCase().indexOf('yes') !== -1 ? 'true' : 'false';
+                $('input[name="under_65"]').val(answer);
             });
 
             $('#slide3 .form-btn').on('click', function () {
-                console.log(this.innerText);
-                $('input[name="diagnosis"]').val(this.innerText);
-                $("#slide3").addClass("hidden");
-                $("#slide4").removeClass("hidden");
+                var answer = this.innerText.toLowerCase().indexOf('yes') !== -1 ? 'true' : 'false';
+                $('input[name="over_4_years"]').val(answer);
             });
 
             $('#slide4 .form-btn').on('click', function () {
-                console.log(this.innerText);
-                $('input[name="has_attorney"]').val(this.innerText);
-                $("#slide4").addClass("hidden");
-                $("#slide5").removeClass("hidden");
+                var answer = this.innerText.toLowerCase().indexOf('yes') !== -1 ? 'true' : 'false';
+                $('input[name="has_attorney"]').val(answer);
             });
 
         });
