@@ -44,12 +44,8 @@
                                         <h4 style="font-size: 30px;color:#032c62";>Free Claim Eligibility Review</h4>
 
                                     </div>
-                                    <form name="basic-form" id="basic-form" class="" action="https://securejag.com/d.ashx" method="post" novalidate="novalidate">
-                                        <input type="hidden" name="ckm_offer_id" value="44">
-                                        <input type="hidden" name="use_talc_4_years" id="use_talc_4_years" value="">
-                                        <input type="hidden" name="diagnosed_ovarian_cancer" id="diagnosed_ovarian_cancer" value="">
-                                        <input type="hidden" name="under_65_when_diagnosed" id="under_65_when_diagnosed" value="">
-                                        <input type="hidden" name="lawyer" id="lawyer" value="">
+                                    <form name="basic-form" id="basic-form" class="" action="/" method="post" novalidate="novalidate">
+
                                         <div id="slide1">
                                             <div class="visible-xs-block">
                                                 <p>When were you or a loved one diagnosed with Ovarian Cancer?</p>
@@ -112,7 +108,7 @@
                                             </div>
                                             <div class="grouping">
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" name="opt_in" id="opt_in" value="1"><div class="tcpa">By checking this box, you agree to our <a href="../../terms-of-use/index.html"  target="_blank">Terms of Use</a> and that The Justice Advocates, a third party verification service and up to 3 law firms you are matched with may contact you about their services at your above phone number(s) even if it is on a National or State Do Not Call List.  Calls/texts may employ automated dialing technology and prerecorded/artificial voice messages.  I understand my consent is not a condition of any purchase.</div>
+                                                    <div class="tcpa">By checking this box, you agree to our <a href="/terms"  target="_blank">Terms of Use</a> and that The Justice Advocates, a third party verification service and up to 3 law firms you are matched with may contact you about their services at your above phone number(s) even if it is on a National or State Do Not Call List.  Calls/texts may employ automated dialing technology and prerecorded/artificial voice messages.  I understand my consent is not a condition of any purchase.</div>
 
                                                 </label>
                                             </div>
