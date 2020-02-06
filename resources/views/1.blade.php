@@ -75,6 +75,7 @@
                     <li><a href="/terms" target="_blank"  style="color: #ffffff">Terms &amp; Conditions</a></li>
                     <li><a href="/privacy" target="_blank"  style="color: #ffffff">Privacy Policy</a></li>
                     <li><a href="mailto:info@legalinjuryadvocates.com" style="color: #ffffff">Contact Us</a></li>
+                    <li><a href="/ccpa" style="color: #ffffff">California & Nevada Consumer Privacy Information</a></li>
                 </ul>
             </div>
         </div>

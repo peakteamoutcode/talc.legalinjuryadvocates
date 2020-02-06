@@ -87,3 +87,7 @@ Route::get('/terms', function () {
 Route::get('/privacy', function () {
     return view('privacy') ;
 });
+
+Route::get('/ccpa', function () {
+    return view('ccpa') ;
+});
