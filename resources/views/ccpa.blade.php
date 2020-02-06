@@ -7,7 +7,7 @@
 <div class="row">
     <div class="col-xs-12 policy-content">
 
-        <p>This Privacy Notice for <strong>California Residents and Nevada Consumers</strong> supplements and is expressly made part of the information contained in Justice Advocates’ (“Us,” “We,” “Our,” or “Justice Advocates”) <a href="/privacy-policy/">Privacy Policy</a> and applies solely to all visitors, users, and others who are California residents or consumers in the State of Nevada (“Consumers” or “You”). We adopt this Notice to comply with the California Consumer Privacy Act of 2018 (CCPA) and the Nevada Security and Privacy of Personal Information Statute, as amended (the “Nevada Act”).  Any terms defined in the CCPA or the Nevada Act have the same meaning when used in this Notice. Terms defined in both the CCPA and the Nevada Act shall have the meaning defined in the CCPA. Unless specifically prevented from doing so by law or otherwise noted, we provide the same rights and information to Nevada consumers as we do California residents.</p>
+        <p>This Privacy Notice for <strong>California Residents and Nevada Consumers</strong> supplements and is expressly made part of the information contained in Justice Advocates’ (“Us,” “We,” “Our,” or “Justice Advocates”) <a href="/privacy">Privacy Policy</a> and applies solely to all visitors, users, and others who are California residents or consumers in the State of Nevada (“Consumers” or “You”). We adopt this Notice to comply with the California Consumer Privacy Act of 2018 (CCPA) and the Nevada Security and Privacy of Personal Information Statute, as amended (the “Nevada Act”).  Any terms defined in the CCPA or the Nevada Act have the same meaning when used in this Notice. Terms defined in both the CCPA and the Nevada Act shall have the meaning defined in the CCPA. Unless specifically prevented from doing so by law or otherwise noted, we provide the same rights and information to Nevada consumers as we do California residents.</p>
 
         <h5>Information We Collect</h5>
 
@@ -168,7 +168,7 @@
         <p>As you navigate through and interact with our Site, we may use automatic data collection technologies to collect certain information about your equipment, browsing actions and patterns, including:</p>
 
         <p>If you are 16 years of age or older, you have the right to direct us to not sell your personal information at any time (the “Right to Opt-Out”). We never intentionally collect information from users that we actually know are less than 16 years of age, and will never sell the personal information of users we actually know are less than 16 years of age. Users who opt-in to personal information sales may opt-out of future sales at any time.</p>
-        <p>To exercise the Right to Opt-Out, you (or your authorized representative) may submit a request to us by sending an email to us at <a href="mailto:"></a> with the subject line “Opt-Out Request.” Please provide the same information as is required for a “Access Request” as is described above (along with any documentation showing that you are the registered agent of the data subject, if relevant) so we may verify that you are qualified to make the request.</p>
+        <p>To exercise the Right to Opt-Out, you (or your authorized representative) may submit a request to us by sending an email to us at <a href="mailto:info@legalinjuryadvocates.com">info@legalinjuryadvocates.com</a> with the subject line “Opt-Out Request.” Please provide the same information as is required for a “Access Request” as is described above (along with any documentation showing that you are the registered agent of the data subject, if relevant) so we may verify that you are qualified to make the request.</p>
         <p>Once you make an opt-out request, we will wait at least twelve (12) months before asking you to reauthorize personal information sales. However, you may change your mind and opt back in to personal information sales at any time by contacting us at the email address or phone number provided in this notice.</p>
         <p>You do not need to create an account with us to exercise your Right to Opt-Out.  We will only use personal information provided in an opt-out request to review and comply with the request.</p>
 
@@ -183,7 +183,7 @@
 
         <h5>Other California Privacy Rights</h5>
 
-        <p>California’s “Shine the Light” law (Civil Code Section § 1798.83) permits users of our website that are California residents to request certain information regarding our disclosure of personal information to third parties for their direct marketing purposes. Nevada consumers have the same right under the Nevada Act. To make such a request, please send an email to <a href="mailto:"></a>.</p>
+        <p>California’s “Shine the Light” law (Civil Code Section § 1798.83) permits users of our website that are California residents to request certain information regarding our disclosure of personal information to third parties for their direct marketing purposes. Nevada consumers have the same right under the Nevada Act. To make such a request, please send an email to <a href="mailto:info@legalinjuryadvocates.com">info@legalinjuryadvocates.com</a>.</p>
 
         <h5>Changes to Our Privacy Notice</h5>
 
@@ -193,7 +193,7 @@
 
         <p>If you have any questions or comments about this Notice, the ways in which we collect and use your information described above, your choices and rights regarding such use, or wish to exercise your rights, please do not hesitate to contact us at:</p>
 
-        <p><strong>Phone</strong>: (866) 210-2410</p>
+        <p><strong>Phone</strong>: (866) 525-4562</p>
         <p><strong>Email</strong>: info@legalinjuryadvocates.com</p>
 
     </div>
@@ -206,8 +206,8 @@
 </div>
 <div class="row">
     <div class="col-xs-12 policy-content">
-        <p>In order to connect you with quality legal services pertaining to your claims or injuries, we collect and share certain information from you. You can learn more about our privacy and data handling practices in our <a href="#">Privacy Policy</a> and our <a href="#">Privacy Notice</a> for California residents and Nevada consumers. </p>
-        <p>California residents and Nevada consumers have the right to request access to the data we collect on you, and they may request that we no longer sell such data to our partners or that we delete any data we have relating to them. If you are a California resident or Nevada consumer and would like to learn more about or exercise any of these rights, please either 1) call us at 800.921.1889 and follow the prompts, or 2) email us at <a href="#"></a>.</p>
+        <p>In order to connect you with quality legal services pertaining to your claims or injuries, we collect and share certain information from you. You can learn more about our privacy and data handling practices in our <a href="/privacy">Privacy Policy</a> and our <a href="/ccpa">Privacy Notice</a> for California residents and Nevada consumers. </p>
+        <p>California residents and Nevada consumers have the right to request access to the data we collect on you, and they may request that we no longer sell such data to our partners or that we delete any data we have relating to them. If you are a California resident or Nevada consumer and would like to learn more about or exercise any of these rights, please either 1) call us at PHONE_NUMBER and follow the prompts, or 2) email us at <a href="mailto:info@legalinjuryadvocates.com"> info@legalinjuryadvocates.com</a>.</p>
         <p>In order to verify that you are the data subject, please include the name and email address that we have on file for you along with the following information in your telephone or email message, as pertinent to the type of request you are making:</p>
 
         <p>•	<span style="text-decoration:underline;">Data Access Request</span> – To learn what types of data we have collected about you, please submit 1) a description of the injury or claim under which you originally sought our services, and 2) the corresponding telephone number associated with your application (as originally given to us). </p>
