@@ -197,7 +197,8 @@
                 <div class="col-md-6 p-0">
                     <p>Legal Injury Advocates &copy; 2019. All Rights Reserved.</p>
                 </div>
-                <div class="col-md-6 footer-menu p-0"> <a href="#" data-toggle="modal" data-target="#myModal"> Terms & Conditions</a> <a href="#" data-toggle="modal" data-target="#myModal2"> Privacy Policy</a> </div>
+                <div class="col-md-6 footer-menu p-0"> <a href="#" data-toggle="modal" data-target="#myModal"> Terms & Conditions</a> <a href="#" data-toggle="modal" data-target="#myModal2"> Privacy Policy</a><a
+                        href="mailto:info@legalinjuryadvocates.com"> Contact Us</a> </div>
                 <div class="col-md-12 p-0 footer-paragraph">
                     <p> This is an advertisement. The Legal Injury Advocate is not a law firm or referral service and does not provide legal advice. This is a free matching service. We do not recommend or endorse any attorneys that pay to participate. An attorney-client relationship is not formed when you submit information through the form. You are under no obligation to retain a lawyer who contacts you through this service. </p>
                     <p> By providing your phone number and clicking the "Submit" button below, you consent to receive automated calls and text alerts from the Legal Injury Advocate and related third parties, including participating law firms and members or vendors of the Legal Injury Advocate, providing information about round up lawsuits and round up‐related medical issues, and/or other product liability lawsuits and legal issues, as well as related promotional offers and discounts. You also consent to our Terms & Conditions and Privacy Policy. Consent is not a condition of any purchase. </p>
