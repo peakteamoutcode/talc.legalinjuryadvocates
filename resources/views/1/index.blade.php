@@ -155,7 +155,7 @@
     <div class="row disclaimers text-center">
         <div class="col-xs-12">
             <hr>
-            <p style="color:#444;">This is an advertisement. The Legal Injury Advocate is not a law firm or referral service and does not provide legal advice. This is a free matching service. We do not recommend or endorse any attorneys that pay to participate. An attorney-client relationship is not formed when you submit information through the form. You are under no obligation to retain a lawyer who contacts you through this service.</p>
+            <p style="color:#444;">{{ __('lander.this_is_an_advertisement') }}</p>
         </div>
     </div>
 @endsection
