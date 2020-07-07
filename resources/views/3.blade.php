@@ -14,6 +14,48 @@
 
 <body>
 
+@if(env('FACEBOOK_ACCOUNT_ID', null) !== null)
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='3.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '{{ env('FACEBOOK_ACCOUNT_ID') }}');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{ env('FACEBOOK_ACCOUNT_ID') }}&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+@endif
+
+@if(env('FACEBOOK_ACCOUNT_ID_2', null) !== null)
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='3.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '{{ env('FACEBOOK_ACCOUNT_ID_2') }}');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{ env('FACEBOOK_ACCOUNT_ID_2') }}&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+@endif
+
 <div class="page-wrapper">
 
     <div class="section-wrapper">
@@ -28,16 +70,13 @@
             <p>Copyright © 2019 | All rights reserved.</p>
             <ul>
                 <li>
-                    <a href="https://talc.legalinjuryadvocates.com/terms">Terms & Conditions</a>
+                    <a href="/terms">Terms & Conditions</a>
                 </li>
                 <li>
-                    <a href="https://talc.legalinjuryadvocates.com/privacy">Privacy Policy</a>
+                    <a href="/privacy">Privacy Policy</a>
                 </li>
                 <li>
                     <a href="mailto:info@legalinjuryadvocates.com">Contact Us</a>
-                </li>
-                <li>
-                    <a href="https://talc.legalinjuryadvocates.com/ccpa">California & Nevada Consumer Privacy Information</a>
                 </li>
             </ul>
         </div>

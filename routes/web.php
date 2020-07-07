@@ -80,11 +80,11 @@ Route::group(['prefix' => '/1'], function () {
 
 });
 
-Route::group(['prefix' => '/2'], function () {
+Route::group(['prefix' => '/3'], function () {
 
     Route::get('/', function () {
-        return view('2.index');
-    })->name('2.index');
+        return view('3.index');
+    })->name('3.index');
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
 
@@ -125,13 +125,9 @@ Route::group(['prefix' => '/2'], function () {
 
         $response = $request->getBody()->getContents();
 
-        return redirect()->route('1.thanks');
+        return redirect()->to('/thanks');
 
-    })->name('2.post-lead');
-
-    Route::get('/thanks', function () {
-        return view('1.thanks');
-    })->name('2.thanks');
+    })->name('3.post-lead');
 
 });
 
