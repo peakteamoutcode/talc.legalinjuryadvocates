@@ -129,6 +129,10 @@ Route::group(['prefix' => '/3'], function () {
 
 });
 
+Route::get('/thanks', function () {
+    return view('thanks');
+});
+
 Route::get('/terms', function () {
     return view('terms');
 });
