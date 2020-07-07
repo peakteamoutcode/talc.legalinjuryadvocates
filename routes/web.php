@@ -101,8 +101,6 @@ Route::group(['prefix' => '/3'], function () {
             'phone_home' => $request->get('phone_home'),
             'phone_cell' => $request->get('phone_cell'),
             'ip_address' => $request->get('ip_address'),
-            'is_bot' => false,
-            'qualified' => true,
             'lp_request_id' => $request->get('req_id'),
             'lp_campaign_id' => env('LEADSPEDIA_CAMPAIGN_ID'),
             'lp_campaign_key' => env('LEADSPEDIA_CAMPAIGN_KEY'),
@@ -111,7 +109,7 @@ Route::group(['prefix' => '/3'], function () {
             'lp_s3' => $request->get('s3'),
             'lp_s4' => $request->get('s4'),
             'lp_s5' => $request->get('s5'),
-            'path' => '/1'
+            'path' => '/3'
         ];
 
         $guzzle = new \GuzzleHttp\Client();
