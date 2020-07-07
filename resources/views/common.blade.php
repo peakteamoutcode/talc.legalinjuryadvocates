@@ -3,8 +3,8 @@
 <head>
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Roundup Lawsuit Claims" />
-    <meta name="keywords" content="Roundup Lawsuit Claims" />
+    <meta name="description" content="Talc Lawsuit Claims" />
+    <meta name="keywords" content="Talc Lawsuit Claims" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" id="mobile-viewport">
 
     <meta property="og:locale" content="en_US" />
@@ -17,7 +17,7 @@
     <meta property="og:image:secure_url" content="" />
 
     <!-- Bootstrap CSS -->
-    <title>{{ getenv('SITE_TITLE') ?: 'Elmiron Lawsuit Claims' }}</title>
+    <title>{{ getenv('SITE_TITLE') ?: 'Talc Lawsuit Claims' }}</title>
     <link rel="stylesheet" href="/layouts/common/css/bootstrap.css" type="text/css">
 
     @yield('head_extra')
