@@ -80,6 +80,61 @@ Route::group(['prefix' => '/1'], function () {
 
 });
 
+Route::group(['prefix' => '/2'], function () {
+
+    Route::get('/', function () {
+        return view('2.index');
+    })->name('2.index');
+
+    Route::post('/', function (\Illuminate\Http\Request $request) {
+
+        $postData = [
+            'diagnosed_when' => $request->get('diagnosed_when'),
+            'under_65' => $request->get('under_65'),
+            'over_4_years' => $request->get('over_4_years'),
+            'has_attorney' => $request->get('has_attorney'),
+            'first_name' => $request->get('first_name'),
+            'last_name' => $request->get('last_name'),
+            'email_address' => $request->get('email_address'),
+            'zip_code' => $request->get('zip_code'),
+            'notes' => $request->get('notes'),
+            'phone_home' => $request->get('phone_home'),
+            'phone_cell' => $request->get('phone_cell'),
+            'ip_address' => $request->get('ip_address'),
+            'is_bot' => false,
+            'qualified' => true,
+            'lp_request_id' => $request->get('req_id'),
+            'lp_campaign_id' => env('LEADSPEDIA_CAMPAIGN_ID'),
+            'lp_campaign_key' => env('LEADSPEDIA_CAMPAIGN_KEY'),
+            'lp_s1' => $request->get('s1'),
+            'lp_s2' => $request->get('s2'),
+            'lp_s3' => $request->get('s3'),
+            'lp_s4' => $request->get('s4'),
+            'lp_s5' => $request->get('s5'),
+            'path' => '/1'
+        ];
+
+        $guzzle = new \GuzzleHttp\Client();
+
+        //check if qualified lead or not
+
+
+        $request = $guzzle->request('POST', 'https://legalinjurynetwork.leadspediatrack.com/post.do', [
+            'form_params' => $postData
+        ]);
+
+        $response = $request->getBody()->getContents();
+
+        return redirect()->route('1.thanks');
+
+    })->name('2.post-lead');
+
+    Route::get('/thanks', function () {
+        return view('1.thanks');
+    })->name('2.thanks');
+
+});
+
 Route::get('/terms', function () {
     return view('terms');
 });
