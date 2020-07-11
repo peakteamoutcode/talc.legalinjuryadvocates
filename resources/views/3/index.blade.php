@@ -127,7 +127,7 @@
                             <textarea class="" name="notes" id="notes" rows="2" placeholder="Help us better understand by providing more details."></textarea>
                         </div>
                         <p>By checking this box, you agree to our Terms of Use and that The Justice Advocates, a third party verification service and up to 3 law firms you are matched with may contact you about their services at your above phone number(s) even if it is on a National or State Do Not Call List. Calls/texts may employ automated dialing technology and prerecorded/artificial voice messages. I understand my consent is not a condition of any purchase.</p>
-                        <button type="button" id="after_2003" class="form-btn form-btn-yes">Review My Claim!</button>
+                        <button type="submit" id="after_2003" class="form-btn form-btn-yes">Review My Claim!</button>
                     </div>
                 </div>
             </form>
