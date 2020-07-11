@@ -45,21 +45,10 @@
                 <input type="hidden" name="over_4_years" value="">
                 <input type="hidden" name="has_attorney" value="">
 
+
                 <div class="form-slide slide-one">
                     <p>When were you or a loved one diagnosed with Ovarian Cancer?</p>
                     <p>Finding out if you are eligible for a large settlement for your Ovarian Cancer claim is free, fast and easy!</p>
-                    <!-- <div class="inputGroup">
-                        <input id="radio1" name="year" value="2003" type="radio">
-                        <label for="radio1">2003 - 2019</label>
-                    </div>
-                    <div class="inputGroup">
-                        <input id="radio2" name="year" value="before" type="radio">
-                        <label for="radio2">BEFORE 2003</label>
-                    </div>
-                    <div class="inputGroup">
-                        <input id="radio3" name="year" value="not" type="radio">
-                        <label for="radio3">Not Diagnosed</label>
-                    </div> -->
                     <button type="button" id="after_2003" class="form-btn form-btn-yes">2003 - 2019</button>
                     <button type="button" id="before_2003" class="form-btn form-btn-yes">BEFORE 2003</button>
                     <button type="button" id="not_diagnosed" class="form-btn form-btn-no">Not Diagnosed</button>
@@ -138,7 +127,7 @@
                             <textarea class="" name="notes" id="notes" rows="2" placeholder="Help us better understand by providing more details."></textarea>
                         </div>
                         <p>By checking this box, you agree to our Terms of Use and that The Justice Advocates, a third party verification service and up to 3 law firms you are matched with may contact you about their services at your above phone number(s) even if it is on a National or State Do Not Call List. Calls/texts may employ automated dialing technology and prerecorded/artificial voice messages. I understand my consent is not a condition of any purchase.</p>
-                        <button type="submit" id="after_2003" class="form-btn form-btn-yes">Review My Claim!</button>
+                        <button type="button" id="after_2003" class="form-btn form-btn-yes">Review My Claim!</button>
                     </div>
                 </div>
             </form>
