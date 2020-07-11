@@ -1,6 +1,6 @@
 @extends('3')
 
-@yield('page_wrapper_classes', 'contact-us-page')
+@section('page_wrapper_classes', 'contact-us-page')
 
 @section('content')
     <div class="section-heading">
