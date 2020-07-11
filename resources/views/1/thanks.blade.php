@@ -38,7 +38,7 @@
     <script type="text/javascript" src="{{ env('LEADSPEDIA_OFFER_TRACKING_URL') }}"></script><noscript><img src="{{ env('LEADSPEDIA_OFFER_TRACKING_URL') }}" width="1" height="1" /></noscript>
     <!-- // End Offer Conversion -->
 
-    <div class="container-fluid" style="background-image: url('/layouts/3/images/iStock-1163254821.jpg')">
+    <div class="container-fluid">
         <div class="row all-set-images">
             <div class="col-md-12 text-set">
                 <h3> YOU'RE ALL SET! </h3>
