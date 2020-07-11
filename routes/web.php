@@ -144,3 +144,7 @@ Route::get('/privacy', function () {
 Route::get('/ccpa', function () {
     return view('ccpa') ;
 });
+
+Route::get('/contact', function () {
+    return view('3.contact');
+});

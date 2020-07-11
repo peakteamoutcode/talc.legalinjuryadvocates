@@ -56,7 +56,7 @@
     <!-- End Facebook Pixel Code -->
 @endif
 
-<div class="page-wrapper">
+<div class="page-wrapper @yield('page_wrapper_classes', '')">
 
     <div class="section-wrapper">
         @yield('content')
@@ -76,7 +76,7 @@
                     <a href="/privacy">Privacy Policy</a>
                 </li>
                 <li>
-                    <a href="mailto:info@legalinjuryadvocates.com">Contact Us</a>
+                    <a href="/contact">Contact Us</a>
                 </li>
             </ul>
         </div>
