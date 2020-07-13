@@ -5,7 +5,7 @@
 @section('content')
     <div class="section-header">
         <a href="#">
-            <img src="/layouts/3//layouts/3/images/logo.png" alt="">
+            <img src="/layouts/3/images/logo.png" alt="">
         </a>
     </div>
     <div class="section-row">
