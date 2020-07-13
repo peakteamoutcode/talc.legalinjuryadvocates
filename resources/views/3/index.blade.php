@@ -5,14 +5,14 @@
 @section('content')
     <div class="section-header">
         <a href="#">
-            <img src="/layouts/3/images/logo.png" alt="">
+            <img src="/layouts/3//layouts/3/images/logo.png" alt="">
         </a>
     </div>
     <div class="section-row">
         <div class="section-info">
             <div class="si-title">
                 <div class="si-img">
-                    <img src="images/ovarian.png" alt="">
+                    <img src="/layouts/3/images/ovarian.png" alt="">
                 </div>
                 <div class="si-text">
                     <h2 style="margin-top:40px; font-size: 3em; font-weight:100;line-height: 1.15em;">Attention Women Diagnosed with Ovarian Cancer After Baby Powder Use, <span style="font-weight:bold;">compensation may be available!</span><br></h2>
