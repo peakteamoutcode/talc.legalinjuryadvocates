@@ -89,8 +89,8 @@ Route::group(['prefix' => '/3'], function () {
     Route::post('/', function (\Illuminate\Http\Request $request) {
 
         $postData = [
+            'diagnosed' => $request->get('diagnosed'),
             'diagnosed_when' => $request->get('diagnosed_when'),
-            'under_65' => $request->get('under_65'),
             'over_4_years' => $request->get('over_4_years'),
             'has_attorney' => $request->get('has_attorney'),
             'first_name' => $request->get('first_name'),

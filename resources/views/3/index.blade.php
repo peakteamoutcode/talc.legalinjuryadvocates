@@ -51,8 +51,8 @@
                 <input type="hidden" name="s4" value="{{ isset($_GET['s4']) ? $_GET['s4'] : '' }}">
                 <input type="hidden" name="s5" value="{{ isset($_GET['s5']) ? $_GET['s5'] : '' }}">
 
+                <input type="hidden" name="diagnosed" value="">
                 <input type="hidden" name="diagnosed_when" value="">
-                <input type="hidden" name="under_65" value="">
                 <input type="hidden" name="over_4_years" value="">
                 <input type="hidden" name="has_attorney" value="">
 
