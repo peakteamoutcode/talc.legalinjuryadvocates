@@ -26,7 +26,6 @@
                     <li>FALLOPIAN TUBE CANCER</li>
                     <li>MESOTHELIOMA, and possibly other fatal diseases.</li>
                 </ul>
-                <p class="offer">Time is limited! Register to file a FREE Claim Review TODAY!</p>
             </div>
             <div class="free-claim">
                 <h4 style="font-size: 25px;">Time is limited to File Your Claim</h4>
