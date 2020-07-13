@@ -4,9 +4,10 @@
 
 @section('content')
     <div class="section-header">
-        <a href="#">
+        <a class="logo" href="#">
             <img src="/layouts/3/images/logo.png" alt="">
         </a>
+        <a class="contact-no" href="tel:(888) 503-5057">CALL NOW: <span>(888) 503-5057</span></a>
     </div>
     <div class="section-row">
         <div class="section-info">
