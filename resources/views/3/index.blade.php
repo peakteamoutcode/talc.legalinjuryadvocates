@@ -1,5 +1,7 @@
 @extends('3')
 
+@section('page_wrapper_classes', 'home-page')
+
 @section('content')
     <div class="section-header">
         <a href="#">
@@ -10,97 +12,72 @@
         <div class="section-info">
             <div class="si-title">
                 <div class="si-img">
-                    <img src="/layouts/3/images/ovarian.png" alt="">
+                    <img src="images/ovarian.png" alt="">
                 </div>
                 <div class="si-text">
-                    <h2 style="margin-top:40px;font-size: 3em; font-weight:100;line-height: 1em;">Were you harmed by dangerous <span style="font-weight:bold;">talcum powder</span>?<br></h2>
-                    <h2 style="color:#00a776;font-size: 2em;line-height:1em">You may be entitled to a financial award!!</h2>
+                    <h2 style="margin-top:40px; font-size: 3em; font-weight:100;line-height: 1.15em;">Attention Women Diagnosed with Ovarian Cancer After Baby Powder Use, <span style="font-weight:bold;">compensation may be available!</span><br></h2>
                 </div>
             </div>
             <div class="si-lists">
+                <p class="list-top-text">J&J failed to warn MILLIONS of WOMEN that their talc-based products could be linked to </p>
                 <ul>
-                    <li>If you have been harmed by talcum powder <span>we can help!</span></li>
-                    <li><span>Don't Delay!</span> There may be a limited time to file your claim! Get the information you need and the justice you deserve!</li>
+                    <li>OVARIAN CANCER</li>
+                    <li>FALLOPIAN TUBE CANCER</li>
+                    <li>MESOTHELIOMA, and possibly other fatal diseases.</li>
                 </ul>
+                <p class="offer">Time is limited! Register to file a FREE Claim Review TODAY!</p>
+            </div>
+            <div class="free-claim">
+                <h4 style="font-size: 25px;">Time is limited to File Your Claim</h4>
+                <div class="case-review">
+                    <h5>Get a <span>FREE</span> Case Review</h5>
+                    <p>You may qualify for compensation!</p>
+                </div>
             </div>
         </div>
         <div class="section-form">
-            <h4 style="font-size: 30px; color:#032c62;">Free Claim Eligibility Review</h4>
-            <form class="claim-form" action="{{ route('3.post-lead') }}" method="POST">
-
-                @csrf
-
-                <input type="hidden" name="req_id" value="{{ (isset($_GET['req_id'])) ? $_GET['req_id'] : '' }}">
-                <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
-
-                <input type="hidden" name="source" value="{{ isset($_GET['source']) ? $_GET['source'] : '' }}">
-                <input type="hidden" name="s1" value="{{ isset($_GET['s1']) ? $_GET['s1'] : '' }}">
-                <input type="hidden" name="s2" value="{{ isset($_GET['s2']) ? $_GET['s2'] : '' }}">
-                <input type="hidden" name="s3" value="{{ isset($_GET['s3']) ? $_GET['s3'] : '' }}">
-                <input type="hidden" name="s4" value="{{ isset($_GET['s4']) ? $_GET['s4'] : '' }}">
-                <input type="hidden" name="s5" value="{{ isset($_GET['s5']) ? $_GET['s5'] : '' }}">
-
-                <input type="hidden" name="diagnosed_when" value="">
-                <input type="hidden" name="under_65" value="">
-                <input type="hidden" name="over_4_years" value="">
-                <input type="hidden" name="has_attorney" value="">
-
-
+            <form class="claim-form">
                 <div class="form-slide slide-one">
-                    <p>When were you or a loved one diagnosed with Ovarian Cancer?</p>
-                    <p>Finding out if you are eligible for a large settlement for your Ovarian Cancer claim is free, fast and easy!</p>
-                    <button type="button" id="after_2003" class="form-btn form-btn-yes">2003 - 2019</button>
-                    <button type="button" id="before_2003" class="form-btn form-btn-yes">BEFORE 2003</button>
-                    <button type="button" id="not_diagnosed" class="form-btn form-btn-no">Not Diagnosed</button>
-                </div>
-                <div class="form-slide slide-two">
-                    <h6>Question 1 of 4</h6>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">25%</div>
-                    </div>
-                    <p>Were you under the age of 65 when diagnosed?</p>
-                    <button type="button" id="yes_cont" class="form-btn form-btn-yes">YES - CONTINUE</button>
+                    <p>Have you or a loved one used Talcum Powder / Baby Powder regularly for feminine hygiene  over 4 years?</p>
+                    <button type="button" id="yes_cont" class="form-btn form-btn-yes">YES</button>
                     <button type="button" id="no_65" class="form-btn form-btn-no error-no">No</button>
                     <p class="error-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
+                <div class="form-slide slide-two">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">25%</div>
+                    </div>
+                    <p>Have you or that loved one been diagnosed with one of the following cancers?</p>
+                    <div class="disease-list">
+                        <button type="button" id="yes_cont" class="form-btn form-btn-yes">Ovarian</button>
+                        <button type="button" id="yes_cont" class="form-btn form-btn-yes">Fallopian Tube</button>
+                        <button type="button" id="yes_cont" class="form-btn form-btn-yes">Mesothelioma</button>
+                        <button type="button" id="yes_cont" class="form-btn form-btn-yes">Death from Ovarian or Fallopian Tube Cancer</button>
+                        <button type="button" id="yes_cont" class="form-btn form-btn-yes">Uterine or Endometrial Cancer</button>
+                        <button type="button" id="yes_cont" class="form-btn form-btn-yes">Borderline or Serous or Mucinous Tumors</button>
+                        <button type="button" id="yes_cont" class="form-btn form-btn-yes">No / Other</button>
+                    </div>
+                    <p class="error-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
                 <div class="form-slide slide-three">
-                    <h6>Question 2 of 4</h6>
                     <div class="progress">
                         <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
                     </div>
-                    <p>Was talc powder used for more than 4 years?</p>
-                    <!-- <div class="inputGroup">
-                        <input id="radio6" name="powder" value="yes" type="radio">
-                        <label for="radio6">YES - CONTINUE</label>
-                    </div>
-                    <div class="inputGroup">
-                        <input id="radio7" name="powder" value="no" type="radio">
-                        <label class="error-no" for="radio7">No</label>
-                    </div> -->
-                    <button type="button" id="years_yes" class="form-btn form-btn-yes">YES - CONTINUE</button>
+                    <p>Was Cancer first diagnosed during or after 2010?</p>
+                    <button type="button" id="years_yes" class="form-btn form-btn-yes">YES</button>
                     <button type="button" id="years_no" class="form-btn form-btn-no error-no">No</button>
                     <p class="error-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
                 <div class="form-slide slide-four">
-                    <h6>Question 3 of 4</h6>
                     <div class="progress">
                         <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
                     </div>
-                    <p>Do you have a lawyer for your claim?</p>
-                    <!-- <div class="inputGroup">
-                        <input id="radio8" name="claim" value="yes" type="radio">
-                        <label for="radio8">YES</label>
-                    </div>
-                    <div class="inputGroup">
-                        <input id="radio9" name="claim" value="no" type="radio">
-                        <label class="error-no" for="radio9">No</label>
-                    </div> -->
+                    <p>Have you signed a contract with another attorney regarding you?</p>
                     <button type="button" id="claim_yes" class="form-btn form-btn-yes">YES</button>
                     <button type="button" id="claim_no" class="form-btn form-btn-no error-no">No</button>
                     <p class="error-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
                 <div class="form-slide slide-five">
-                    <h6>Question 4 of 4</h6>
                     <div class="progress">
                         <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
                     </div>
@@ -127,7 +104,7 @@
                             <textarea class="" name="notes" id="notes" rows="2" placeholder="Help us better understand by providing more details."></textarea>
                         </div>
                         <p>By checking this box, you agree to our Terms of Use and that The Justice Advocates, a third party verification service and up to 3 law firms you are matched with may contact you about their services at your above phone number(s) even if it is on a National or State Do Not Call List. Calls/texts may employ automated dialing technology and prerecorded/artificial voice messages. I understand my consent is not a condition of any purchase.</p>
-                        <button type="submit" id="after_2003" class="form-btn form-btn-yes">Review My Claim!</button>
+                        <button type="button" id="after_2003" class="form-btn form-btn-yes">Review My Claim!</button>
                     </div>
                 </div>
             </form>
