@@ -5,7 +5,7 @@
 @section('content')
     <div class="section-header">
         <a class="logo" href="#">
-            <img src="/projects/legalinjurynetwork/talc/3/images/logo.png" alt="">
+            <img src="/layouts/3/images/logo.png" alt="">
         </a>
         <a class="contact-no" href="tel:(888) 503-5057">CALL NOW: <span>(888) 503-5057</span></a>
     </div>
@@ -13,7 +13,7 @@
         <div class="section-info">
             <div class="si-title">
                 <div class="si-img">
-                    <img src="/projects/legalinjurynetwork/talc/3/images/ovarian.png" alt="">
+                    <img src="/layouts/3/images/ovarian.png" alt="">
                 </div>
                 <div class="si-text">
                     <h2 style="margin-top:40px; font-size: 3em; font-weight:500;line-height: 1.15em;">Attention
