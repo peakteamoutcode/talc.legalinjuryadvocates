@@ -1,6 +1,7 @@
 $("form.claim-form .slide-one button.form-btn").click(function () {
     $(".form-slide").hide();
     $(".form-slide.slide-two").show();
+    var answer = this.innerText.toLowerCase().indexOf('yes') !== -1 ? 'true' : 'false';
     $('input[name="over_4_years"]').val(answer);
 });
 
