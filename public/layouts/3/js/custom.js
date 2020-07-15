@@ -19,6 +19,7 @@ $("form.claim-form .slide-three button.form-btn").click(function () {
     $('input[name="diagnosed_when"]').val(answer);
 });
 
+
 $("form.claim-form .slide-four button.form-btn").click(function () {
     $("form.claim-form p.error-text").hide();
     $(".form-slide").hide();
