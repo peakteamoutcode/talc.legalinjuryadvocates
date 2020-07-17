@@ -129,27 +129,27 @@
                     <div class="sf-wrapper">
                         <div class="form-group">
                             <input type="text" class="big" name="first_name" id="first_name"
-                                   placeholder="First Name">
+                                   placeholder="First Name" required>
                         </div>
                         <div class="form-group">
                             <input type="text" class="big" name="last_name" id="last_name"
-                                   placeholder="Last Name">
+                                   placeholder="Last Name" required>
                         </div>
                         <div class="form-group">
                             <input type="number" class="big phone_us" name="phone_cell" id="phone_cell"
-                                   placeholder="Phone" maxlength="14">
+                                   placeholder="Phone" maxlength="14" required>
                         </div>
                         <div class="form-group">
                             <input type="number" class="big phone_us" name="phone_home" id="phone_home"
-                                   placeholder="Confirm Phone" maxlength="14">
+                                   placeholder="Confirm Phone" maxlength="14" required>
                         </div>
                         <div class="form-group">
                             <input type="text" class="big zip_code" name="zip_code" id="zip_code"
-                                   placeholder="Zip" maxlength="5">
+                                   placeholder="Zip" maxlength="5" required>
                         </div>
                         <div class="form-group">
                             <input type="email" class="big" name="email_address" id="email_address"
-                                   placeholder="Email">
+                                   placeholder="Email" required>
                         </div>
                         <div class="form-group w-full">
                                     <textarea class="" name="notes" id="notes" rows="2"
