@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['prefix' => '/1'], function () {
+Route::group(['prefix' => '/4'], function () {
 
     Route::get('/', function () {
         return view('1.index');
@@ -77,6 +77,55 @@ Route::group(['prefix' => '/1'], function () {
     Route::get('/thanks', function () {
         return view('1.thanks');
     })->name('1.thanks');
+
+});
+
+Route::group(['prefix' => '/1'], function () {
+
+    Route::get('/', function () {
+        return view('3.index');
+    })->name('3.index');
+
+    Route::post('/', function (\Illuminate\Http\Request $request) {
+
+        $postData = [
+            'diagnosed' => $request->get('diagnosed'),
+            'diagnosed_when' => $request->get('diagnosed_when'),
+            'over_4_years' => $request->get('over_4_years'),
+            'has_attorney' => $request->get('has_attorney'),
+            'first_name' => $request->get('first_name'),
+            'last_name' => $request->get('last_name'),
+            'email_address' => $request->get('email_address'),
+            'zip_code' => $request->get('zip_code'),
+            'notes' => $request->get('notes'),
+            'phone_home' => $request->get('phone_home'),
+            'phone_cell' => $request->get('phone_cell'),
+            'ip_address' => $request->get('ip_address'),
+            'lp_request_id' => $request->get('req_id'),
+            'lp_campaign_id' => env('LEADSPEDIA_CAMPAIGN_ID'),
+            'lp_campaign_key' => env('LEADSPEDIA_CAMPAIGN_KEY'),
+            'lp_s1' => $request->get('s1'),
+            'lp_s2' => $request->get('s2'),
+            'lp_s3' => $request->get('s3'),
+            'lp_s4' => $request->get('s4'),
+            'lp_s5' => $request->get('s5'),
+            'path' => '/3'
+        ];
+
+        $guzzle = new \GuzzleHttp\Client();
+
+        //check if qualified lead or not
+
+
+        $request = $guzzle->request('POST', 'https://legalinjurynetwork.leadspediatrack.com/post.do', [
+            'form_params' => $postData
+        ]);
+
+        $response = $request->getBody()->getContents();
+
+        return redirect()->to('/thanks');
+
+    })->name('3.post-lead');
 
 });
 
