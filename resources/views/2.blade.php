@@ -197,8 +197,12 @@
                 <div class="col-md-6 p-0">
                     <p>Legal Injury Advocates &copy; 2019. All Rights Reserved.</p>
                 </div>
-                <div class="col-md-6 footer-menu p-0"> <a href="#" data-toggle="modal" data-target="#myModal"> Terms & Conditions</a> <a href="#" data-toggle="modal" data-target="#myModal2"> Privacy Policy</a><a
-                        href="mailto:info@legalinjuryadvocates.com"> Contact Us</a>                    <li><a href="https://legalinjuryadvocates.com/ccpa" style="color: #ffffff">California & Nevada Consumer Privacy Information</a></li>
+                <div class="col-md-6 footer-menu p-0">
+                    <a href="#" data-toggle="modal" data-target="#myModal"> Terms & Conditions</a>
+                    <a href="#" data-toggle="modal" data-target="#myModal2"> Privacy Policy</a>
+                    <a href="mailto:info@legalinjuryadvocates.com"> Contact Us</a>
+                    <a href="https://legalinjuryadvocates.com/ccpa" style="color: #ffffff">California & Nevada Consumer Privacy Information</a>
+                    <a href="https://legalinjuryadvocates.com/do-not-sell" style="color: #ffffff">Do Not Sell</a>
                 </div>
                 <div class="col-md-12 p-0 footer-paragraph">
                     <p> This is an advertisement. The Legal Injury Advocate is not a law firm or referral service and does not provide legal advice. This is a free matching service. We do not recommend or endorse any attorneys that pay to participate. An attorney-client relationship is not formed when you submit information through the form. You are under no obligation to retain a lawyer who contacts you through this service. </p>

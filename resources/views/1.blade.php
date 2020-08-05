@@ -76,6 +76,7 @@
                     <li><a href="https://legalinjuryadvocates.com/privacy" target="_blank"  style="color: #ffffff">Privacy Policy</a></li>
                     <li><a href="mailto:info@legalinjuryadvocates.com" style="color: #ffffff">Contact Us</a></li>
                     <li><a href="https://legalinjuryadvocates.com/ccpa" style="color: #ffffff">California & Nevada Consumer Privacy Information</a></li>
+                    <li><a href="https://legalinjuryadvocates.com/do-not-sell" style="color: #ffffff">Do Not Sell</a></li>
                 </ul>
             </div>
         </div>

@@ -76,6 +76,12 @@
                     <a href="https://legalinjuryadvocates.com/privacy">Privacy Policy</a>
                 </li>
                 <li>
+                    <a href="https://legalinjuryadvocates.com/ccpa">CCPA</a>
+                </li>
+                <li>
+                    <a href="https://legalinjuryadvocates.com/do-not-sell">Do Not Sell</a>
+                </li>
+                <li>
                     <a href="/contact">Contact Us</a>
                 </li>
             </ul>
