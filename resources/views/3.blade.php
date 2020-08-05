@@ -70,10 +70,10 @@
             <p>Copyright © 2020
             <ul>
                 <li>
-                    <a href="/terms">Terms & Conditions</a>
+                    <a href="https://legalinjuryadvocates.com/terms">Terms & Conditions</a>
                 </li>
                 <li>
-                    <a href="/privacy">Privacy Policy</a>
+                    <a href="https://legalinjuryadvocates.com/privacy">Privacy Policy</a>
                 </li>
                 <li>
                     <a href="/contact">Contact Us</a>

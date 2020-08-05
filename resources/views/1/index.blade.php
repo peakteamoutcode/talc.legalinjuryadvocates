@@ -125,7 +125,7 @@
                                             </div>
                                             <div class="grouping">
                                                 <label class="checkbox-inline">
-                                                    <div class="tcpa">By checking this box, you agree to our <a href="/terms"  target="_blank">Terms of Use</a> and that The Justice Advocates, a third party verification service and up to 3 law firms you are matched with may contact you about their services at your above phone number(s) even if it is on a National or State Do Not Call List.  Calls/texts may employ automated dialing technology and prerecorded/artificial voice messages.  I understand my consent is not a condition of any purchase.</div>
+                                                    <div class="tcpa">By checking this box, you agree to our <a href="https://legalinjuryadvocates.com/terms"  target="_blank">Terms of Use</a> and that The Justice Advocates, a third party verification service and up to 3 law firms you are matched with may contact you about their services at your above phone number(s) even if it is on a National or State Do Not Call List.  Calls/texts may employ automated dialing technology and prerecorded/artificial voice messages.  I understand my consent is not a condition of any purchase.</div>
 
                                                 </label>
                                             </div>
