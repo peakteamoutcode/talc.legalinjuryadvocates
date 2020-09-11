@@ -81,7 +81,7 @@
                              role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">25%
                         </div>
                     </div>
-                    <p>Have you or that loved one been diagnosed with one of the following cancers?</p>
+                    <p>Have you or a loved one been diagnosed with one of the following cancers?</p>
                     <div class="disease-list">
                         <button type="button" id="yes_cont" class="form-btn form-btn-yes">Ovarian</button>
                         <button type="button" id="yes_cont" class="form-btn form-btn-yes">Fallopian
@@ -89,10 +89,6 @@
                         <button type="button" id="yes_cont" class="form-btn form-btn-yes">Mesothelioma</button>
                         <button type="button" id="yes_cont" class="form-btn form-btn-yes">Death from Ovarian or
                             Fallopian Tube Cancer</button>
-                        <button type="button" id="yes_cont" class="form-btn form-btn-yes">Uterine or Endometrial
-                            Cancer</button>
-                        <button type="button" id="yes_cont" class="form-btn form-btn-yes">Borderline or Serous
-                            or Mucinous Tumors</button>
                         <button type="button" id="yes_cont" class="form-btn form-btn-yes">No / Other</button>
                     </div>
                     <!-- <button type="button" id="no_65" class="form-btn form-btn-no error-no">No</button> -->
