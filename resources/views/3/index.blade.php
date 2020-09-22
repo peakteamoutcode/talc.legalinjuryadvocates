@@ -87,6 +87,7 @@
                         <button type="button" id="yes_cont" class="form-btn form-btn-yes">Fallopian
                             Tube</button>
                         <button type="button" id="yes_cont" class="form-btn form-btn-yes">Mesothelioma</button>
+                        <button type="button" id="yes_cont" class="form-btn form-btn-yes">Peritoneal Cancer</button>
                         <button type="button" id="yes_cont" class="form-btn form-btn-yes">Death from Ovarian or
                             Fallopian Tube Cancer</button>
                         <button type="button" id="yes_cont" class="form-btn form-btn-yes">No / Other</button>
