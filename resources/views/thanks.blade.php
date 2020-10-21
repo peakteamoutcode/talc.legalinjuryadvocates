@@ -46,4 +46,11 @@
                 <a href="#">For a quicker response please call us at {{ isset($phoneNumber) ? $phoneNumber : env('PHONE_NUMBER') }} </a> </div>
         </div>
     </div>
+
+    <script async>
+        !function(C,l,i,c,k,a,g,y){(g=l.createElement(c)).onload=g.onreadystatechange=function(){
+            g.readyState&&!/loaded|complete/.test(g.readyState)||(C[i](a),g.onload=g.onreadystatechange=null)
+        },y=l.getElementsByTagName(c)[0],g.src=k,g.async=1,y.parentNode.insertBefore(g,y)
+        }(window,document,'_initClickagy','script','https://tags.clickagy.com/data.js?rnd=5f11f950c2e11',{"aid":"vffbk82gn13yr","list":"5yuk4l9q4jwx","conv_name":"k9ximaz0u4z","conv_v":"<VALUE>"});
+    </script>
 @endsection
