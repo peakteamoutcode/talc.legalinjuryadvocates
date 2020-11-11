@@ -53,8 +53,7 @@
                 @csrf
 
                 <input type="hidden" name="req_id" value="{{ isset($_GET['req_id']) ? $_GET['req_id'] : '' }}">
-                {{-- <input type="hidden" name="ip_address"
-                    value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}"> --}}
+                <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
 
                 <input type="hidden" name="source" value="{{ isset($_GET['source']) ? $_GET['source'] : '' }}">
                 <input type="hidden" name="s1" value="{{ isset($_GET['s1']) ? $_GET['s1'] : '' }}">
