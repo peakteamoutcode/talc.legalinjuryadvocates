@@ -43,7 +43,7 @@
                 <p class="second-text"> There is NO charge to you for exploring your options and absolutely no obligations!<br/>
                     There is no upfront charge to you at all and your attorneys will only get paid if they<br/>
                     win your case! You have nothing to lose and so much to gain. </p>
-                <a href="#">For a quicker response please call us at {{ isset($phoneNumber) ? $phoneNumber : env('PHONE_NUMBER') }} </a> </div>
+                <a href="tel:{{ isset($phoneNumber) ? $phoneNumber : env('PHONE_NUMBER') }}">For a quicker response please call us at {{ isset($phoneNumber) ? $phoneNumber : env('PHONE_NUMBER') }} </a> </div>
         </div>
     </div>
 

@@ -568,6 +568,13 @@ form.claim-form .form-group input {
     background-color: #f9f9f9;
     box-shadow: 0 0 0 1px #7BC1ED;
 }
+.phone_validation {
+    display: none;
+    color: red;
+    margin: 5px 3% 0;
+    font-size: 14px;
+    line-height: 20px;
+}
 
 form.claim-form .form-group textarea {
     padding: 20px 3%;

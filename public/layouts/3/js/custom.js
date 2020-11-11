@@ -35,7 +35,9 @@ $("#phone_cell, #phone_home").keyup(function () {
     var secondInput = document.getElementById("phone_home").value;
     if (firstInput != secondInput) {
         $("#phone_cell, #phone_home").addClass("not-confirmed");
+        $(".phone_validation").fadeIn();
     } else if (firstInput === secondInput) {
         $("#phone_cell, #phone_home").removeClass("not-confirmed");
+        $(".phone_validation").fadeOut();
     }
 });

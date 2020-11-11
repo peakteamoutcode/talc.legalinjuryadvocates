@@ -52,8 +52,9 @@
 
                 @csrf
 
-                <input type="hidden" name="req_id" value="{{ (isset($_GET['req_id'])) ? $_GET['req_id'] : '' }}">
-                <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
+                <input type="hidden" name="req_id" value="{{ isset($_GET['req_id']) ? $_GET['req_id'] : '' }}">
+                {{-- <input type="hidden" name="ip_address"
+                    value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}"> --}}
 
                 <input type="hidden" name="source" value="{{ isset($_GET['source']) ? $_GET['source'] : '' }}">
                 <input type="hidden" name="s1" value="{{ isset($_GET['s1']) ? $_GET['s1'] : '' }}">
@@ -77,8 +78,8 @@
                 </div>
                 <div class="form-slide slide-two">
                     <div class="progress">
-                        <div class="progress-bar progress-bar-success progress-bar-striped active"
-                             role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">25%
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 25%;">25%
                         </div>
                     </div>
                     <p>Have you or a loved one been diagnosed with one of the following cancers?</p>
@@ -97,8 +98,8 @@
                 </div>
                 <div class="form-slide slide-three">
                     <div class="progress">
-                        <div class="progress-bar progress-bar-success progress-bar-striped active"
-                             role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%
                         </div>
                     </div>
                     <p>Was Cancer first diagnosed during or after 2010?</p>
@@ -108,8 +109,8 @@
                 </div>
                 <div class="form-slide slide-four">
                     <div class="progress">
-                        <div class="progress-bar progress-bar-success progress-bar-striped active"
-                             role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%
                         </div>
                     </div>
                     <p>Have you signed a contract with another attorney regarding you?</p>
@@ -119,38 +120,38 @@
                 </div>
                 <div class="form-slide slide-five">
                     <div class="progress">
-                        <div class="progress-bar progress-bar-success progress-bar-striped active"
-                             role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%
                         </div>
                     </div>
                     <div class="sf-wrapper">
                         <div class="form-group">
-                            <input type="text" class="big" name="first_name" id="first_name"
-                                   placeholder="First Name" required>
+                            <input type="text" class="big" name="first_name" id="first_name" placeholder="First Name"
+                                required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="big" name="last_name" id="last_name"
-                                   placeholder="Last Name" required>
+                            <input type="text" class="big" name="last_name" id="last_name" placeholder="Last Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="number" class="big phone_us" name="phone_cell" id="phone_cell"
-                                   placeholder="Phone" maxlength="14" required>
+                            <input type="number" class="big phone_us" name="phone_cell" id="phone_cell" placeholder="Phone"
+                                maxlength="14" required>
+                            <div class="phone_validation">Phone numbers do not match!</div>
                         </div>
                         <div class="form-group">
                             <input type="number" class="big phone_us" name="phone_home" id="phone_home"
-                                   placeholder="Confirm Phone" maxlength="14" required>
+                                placeholder="Confirm Phone" maxlength="14" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="big zip_code" name="zip_code" id="zip_code"
-                                   placeholder="Zip" maxlength="5" required>
+                            <input type="text" class="big zip_code" name="zip_code" id="zip_code" placeholder="Zip"
+                                maxlength="5" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="big" name="email_address" id="email_address"
-                                   placeholder="Email" required>
+                            <input type="email" class="big" name="email_address" id="email_address" placeholder="Email"
+                                required>
                         </div>
                         <div class="form-group w-full">
-                                    <textarea class="" name="notes" id="notes" rows="2"
-                                              placeholder="Help us better understand by providing more details."></textarea>
+                            <textarea class="" name="notes" id="notes" rows="2"
+                                placeholder="Help us better understand by providing more details."></textarea>
                         </div>
                         <p>By submitting this information, you agree to our Terms & Conditions and that Legal
                             Injury Advocates and its partner law firms may contact you about their services at
