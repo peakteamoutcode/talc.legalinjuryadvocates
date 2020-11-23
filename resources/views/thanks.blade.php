@@ -9,7 +9,17 @@
     @if(env('FACEBOOK_ACCOUNT_ID', null) !== null)
         <!-- Facebook Pixel Code -->
         <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='3.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '{{ env('FACEBOOK_ACCOUNT_ID') }}');
             fbq('track', 'Lead');
+            fbq('track', 'PageView');
         </script>
         <noscript>
             <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{ env('FACEBOOK_ACCOUNT_ID') }}&ev=Lead&noscript=1"/>
@@ -17,16 +27,7 @@
         <!-- End Facebook Pixel Code -->
     @endif
 
-    @if(env('FACEBOOK_ACCOUNT_ID_2', null) !== null)
-        <!-- Facebook Pixel Code -->
-        <script>
-            fbq('track', 'Lead');
-        </script>
-        <noscript>
-            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{ env('FACEBOOK_ACCOUNT_ID_2') }}&ev=Lead&noscript=1"/>
-        </noscript>
-        <!-- End Facebook Pixel Code -->
-    @endif
+
 
 
     <!-- Offer Conversion: Roundup -->
