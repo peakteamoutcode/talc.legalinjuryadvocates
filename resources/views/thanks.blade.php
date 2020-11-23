@@ -5,8 +5,6 @@
 @endsection
 
 @section('content')
-    FACEBOOK_ACCOUNT_ID= {{env('FACEBOOK_ACCOUNT_ID')}} <br>
-    FACEBOOK_ACCOUNT_ID_2 = {{env('FACEBOOK_ACCOUNT_ID')}}
     
     @if(env('FACEBOOK_ACCOUNT_ID', null) !== null)
         <!-- Facebook Pixel Code -->
