@@ -5,7 +5,7 @@
 @section('content')
     <div class="section-header">
         <a class="logo" href="#">
-            <img src="/layouts/3/images/logo.png" alt="">
+            <img src="{{ getenv('COMPANY_WIDE_LOGO_URL') }}" alt="">
         </a>
         <a class="contact-no" href="tel:(888) 503-5057">CALL NOW: <span>(888) 503-5057</span></a>
     </div>
@@ -53,7 +53,7 @@
                 @csrf
 
                 <input type="hidden" name="req_id" value="{{ isset($_GET['req_id']) ? $_GET['req_id'] : '' }}">
-                <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
+                <input type="hidden" name="ip_address" value="{{ (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'] }}">
 
                 <input type="hidden" name="source" value="{{ isset($_GET['source']) ? $_GET['source'] : '' }}">
                 <input type="hidden" name="s1" value="{{ isset($_GET['s1']) ? $_GET['s1'] : '' }}">
