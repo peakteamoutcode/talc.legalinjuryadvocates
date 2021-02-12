@@ -7,7 +7,6 @@
         <div class="row">
             <div class="col-12">
                 
-                
                 <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 0.23in">
                     <FONT FACE="Times New Roman, serif"><FONT COLOR="#000000"><FONT FACE="Times, serif">Terms
                                 of Use</FONT></FONT></FONT></P>
@@ -57,7 +56,7 @@
                                 acknowledge that standard message and data rates apply and that
                                 submitting information constitutes your electronic signature for your
                                 consent to being contacted and my agreement to the Terms and
-                                Conditions. Legal Injury Advocates&nbsp;LLC will not provide your
+                                Conditions. {{ getenv('COMPANY_NAME') }}&nbsp;LLC will not provide your
                                 contact information to any unaffiliated third parties. o</FONT></FONT></FONT></P>
                 <P STYLE="margin-top: 0.19in; margin-bottom: 0.19in; line-height: 0.23in">
                     <FONT FACE="Times New Roman, serif"><FONT COLOR="#000000"><FONT FACE="Times, serif">2.2
@@ -277,15 +276,11 @@
                                 regulations.&nbsp;&nbsp;</FONT></FONT></FONT></P>
                 <P STYLE="margin-bottom: 0in"><BR>
                 </P>
-                
+
             </div>
             
         </div>
         
     </div>
-    
-    
-    
+
 @endsection
-
-

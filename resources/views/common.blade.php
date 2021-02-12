@@ -123,7 +123,7 @@
                             LIMITATIONS OF LIABILITY, A CLASS-ACTION WAIVER, AND THE REQUIREMENT TO ARBITRATE ANY AND
                             ALL CLAIMS. THESE PROVISIONS FORM AN ESSENTIAL BASIS OF OUR AGREEMENT. YOU AGREE THAT YOU
                             ARE AT LEAST 18 YEARS OLD AND THAT YOU ARE LEGALLY ABLE TO ENTER INTO THIS AGREEMENT.</p>
-                        <p>Legal Injury Advocates (LIA or “Us”) owns and operates this website (the “Site”).</p>
+                        <p>{{ getenv('COMPANY_NAME') }} (LIA or “Us”) owns and operates this website (the “Site”).</p>
                         <p>1. Scope and Application This Agreement applies to your use of our Site. You—the party
                             entering information (“You”)—are entering into a legally binding Agreement (the “Agreement”)
                             with LIA, including our Privacy Policy, which is incorporated by reference. We reserve the
@@ -134,11 +134,11 @@
                             substantive changes to the Agreement, You must expressly consent to the new terms.</p>
                         <h6>2. Terms of Agreement</h6>
                         <p>2.1 If we determine that Your submission merits a follow-up, You consent to being contacted
-                            at the number You provided by Legal Injury Advocates or an attorney, or law firm which may
+                            at the number You provided by {{ getenv('COMPANY_NAME') }} or an attorney, or law firm which may
                             include being contacted by an auto dialer, text message or pre-recorded call. You
                             acknowledge that standard message and data rates apply and that submitting information
                             constitutes your electronic signature for your consent to being contacted and my agreement
-                            to the Terms and Conditions. Legal Injury Advocates LLC will not provide your contact
+                            to the Terms and Conditions. {{ getenv('COMPANY_NAME') }} LLC will not provide your contact
                             information to any unaffiliated third parties.</p>
                         <p>2.2 You agree that submitting information does not establish an attorney client relationship.
                             You consent to the information submitted being reviewed by more than one attorney or law
@@ -272,7 +272,7 @@
                     </div>
                     <div class="modal-body">
                         <h2 class="text-center">Privacy Policy</h2>
-                        <p>This privacy policy (the "Privacy Policy") discloses how Legal Injury Advocates uses the
+                        <p>This privacy policy (the "Privacy Policy") discloses how {{ getenv('COMPANY_NAME') }} uses the
                             personal information it gathers on this site. We will notify you of changes by posting the
                             new policy on this website. By using our services or submitting information, you are
                             accepting the practices described in this Privacy Policy. Your assent to these practices is
@@ -349,7 +349,7 @@
                             we are able to provide you with any information, correct any inaccuracies, or delete any
                             information, however, we may ask you to verify your identity. This website is owned and
                             operated by:</p>
-                        <p>Legal Injury Advocates</p>
+                        <p>{{ getenv('COMPANY_NAME') }}</p>
                     </div>
                 </div>
             </div>
@@ -365,7 +365,7 @@
                     </div>
                     <div class="modal-body">
                         <h2 class="text-center">Privacy Policy</h2>
-                        <p>This privacy policy (the "Privacy Policy") discloses how Legal Injury Advocates uses the
+                        <p>This privacy policy (the "Privacy Policy") discloses how {{ getenv('COMPANY_NAME') }} uses the
                             personal information it gathers on this site. We will notify you of changes by posting the
                             new policy on this website. By using our services or submitting information, you are
                             accepting the practices described in this Privacy Policy. Your assent to these practices is
@@ -442,7 +442,7 @@
                             we are able to provide you with any information, correct any inaccuracies, or delete any
                             information, however, we may ask you to verify your identity. This website is owned and
                             operated by:</p>
-                        <p>Legal Injury Advocates</p>
+                        <p>{{ getenv('COMPANY_NAME') }}</p>
                     </div>
                 </div>
             </div>
@@ -454,7 +454,7 @@
             <div class="container">
                 <div class="row logo-content">
                     <div class="col-lg-6">
-                        <div class="logo-img"> <img src="/layouts/common/images/logo.png" alt="" /> </div>
+                        <div class="logo-img"> <img src="{{ getenv('COMPANY_WIDE_LOGO_URL') }}" alt="" /> </div>
                     </div>
                     <div class="col-lg-6 icon-text">
                         <div class="text-content call-us-sec">
@@ -478,7 +478,7 @@
                 <div class="row m-0">
                     <div class="col-md-6 p-0">
                         <p>Site Sponsored by Young & Partners, LLP</p>
-                        <p>Legal Injury Advocates &copy; 2019. All Rights Reserved.</p>
+                        <p>{{ getenv('COMPANY_NAME') }} &copy; 2019. All Rights Reserved.</p>
                     </div>
                     <div class="col-md-6 footer-menu p-0"> <a href="#" data-toggle="modal" data-target="#myModal"> Terms
                             & Conditions</a> <a href="#" data-toggle="modal" data-target="#myModal2"> Privacy Policy</a>
