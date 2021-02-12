@@ -1,6 +1,9 @@
 @extends('1')
 
 @section('content')
+    
+    
+    
     <div class="row">
         <div class="col-xs-12">
             <div>
@@ -49,7 +52,12 @@
                                         @csrf
 
                                         <input type="hidden" name="req_id" value="{{ (isset($_GET['req_id'])) ? $_GET['req_id'] : '' }}">
-                                        <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
+                                        
+                                        @if (env("APP_ENV") != "local")
+                                            <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
+                                        @endif
+                                        
+                                        
 
                                         <input type="hidden" name="source" value="{{ isset($_GET['source']) ? $_GET['source'] : '' }}">
                                         <input type="hidden" name="s1" value="{{ isset($_GET['s1']) ? $_GET['s1'] : '' }}">

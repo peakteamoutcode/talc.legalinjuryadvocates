@@ -3,6 +3,9 @@
 @section('page_wrapper_classes', 'home-page')
 
 @section('content')
+    
+
+    
     <div class="section-header">
         <a class="logo" href="#">
             <img src="/layouts/3/images/logo.png" alt="">
@@ -53,7 +56,10 @@
                 @csrf
 
                 <input type="hidden" name="req_id" value="{{ isset($_GET['req_id']) ? $_GET['req_id'] : '' }}">
+                @if (env("APP_ENV") != "local")
                 <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
+                @endif
+                
 
                 <input type="hidden" name="source" value="{{ isset($_GET['source']) ? $_GET['source'] : '' }}">
                 <input type="hidden" name="s1" value="{{ isset($_GET['s1']) ? $_GET['s1'] : '' }}">
