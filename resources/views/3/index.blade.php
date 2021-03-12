@@ -3,9 +3,9 @@
 @section('page_wrapper_classes', 'home-page')
 
 @section('content')
-    
 
-    
+
+
     <div class="section-header">
         <a class="logo" href="#">
             <img src="{{ getenv('COMPANY_WIDE_LOGO_URL') }}" alt="">
@@ -60,7 +60,7 @@
                 @if (env("APP_ENV") != "local")
                 <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
                 @endif
-                
+
 =======
                 <input type="hidden" name="ip_address" value="{{ (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'] }}">
 >>>>>>> 80c7c8b5f135745dcc3d4016951d8cc8da7c7007
@@ -163,7 +163,7 @@
                                 placeholder="Help us better understand by providing more details."></textarea>
                         </div>
                         <p>By submitting this information, you agree to our Terms & Conditions and that Legal
-                            Injury Advocates and its partner law firms may contact you about their services at
+                            Injury Network and its partner law firms may contact you about their services at
                             your above phone number(s) even if it is on a National or State Do Not Call List.
                             Calls/texts may employ automated dialing technology and pre-recorded/artificial
                             voice messages. I understand my consent is not a condition of any purchase.</p>
