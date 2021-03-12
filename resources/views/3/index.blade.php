@@ -56,9 +56,6 @@
                 @csrf
 
                 <input type="hidden" name="req_id" value="{{ isset($_GET['req_id']) ? $_GET['req_id'] : '' }}">
-                @if (env("APP_ENV") != "local")
-                <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
-                @endif
 
                 <input type="hidden" name="ip_address" value="{{ (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'] }}">
 
