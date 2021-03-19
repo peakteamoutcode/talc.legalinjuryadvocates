@@ -42,13 +42,13 @@
         <div class="row all-set-images">
             <div class="col-md-12 text-set">
                 <h3> YOU'RE ALL SET! </h3>
-                <p class="first-text"> You will receive an important phone call from Young & Partners Law Firm as soon<br/>
+                <p class="first-text"> You will receive an important phone call soon<br/>
                     as possible. Please do not contact another law firm before we talk with you. You<br/>
                     may not recognize the phone number but please pick it up so we can help you. </p>
                 <p class="second-text"> There is NO charge to you for exploring your options and absolutely no obligations!<br/>
                     There is no upfront charge to you at all and your attorneys will only get paid if they<br/>
                     win your case! You have nothing to lose and so much to gain. </p>
-                <a href="#">For a quicker response please call us at (866) 525-4562 </a> </div>
+                <a href="#">For a quicker response please call us at {{ isset($phoneNumber) ? $phoneNumber : env('PHONE_NUMBER') }} </a> </div>
         </div>
     </div>
 @endsection

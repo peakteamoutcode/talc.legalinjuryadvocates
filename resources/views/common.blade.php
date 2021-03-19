@@ -462,8 +462,7 @@
                             {{-- <h5>CALL US NOW <i class="fas fa-phone-alt"></i><a
                                     href="tel:{{ isset($phoneNumber) ? $phoneNumber : env('PHONE_NUMBER') }}"><span>{{ isset($phoneNumber) ? $phoneNumber : env('PHONE_NUMBER') }}</span></a>
                             </h5> --}}
-                            <h5>CALL US NOW <i class="fas fa-phone-alt"></i><a href="tel:(888) 503-5057"><span>(888)
-                                        503-5057</span></a>
+                            <h5>CALL US NOW <i class="fas fa-phone-alt"></i><a href="tel:{{ isset($phoneNumber) ? $phoneNumber : env('PHONE_NUMBER') }}"><span>{{ isset($phoneNumber) ? $phoneNumber : env('PHONE_NUMBER') }}</span></a>
                             </h5>
                         </div>
                     </div>
@@ -477,12 +476,16 @@
             <div class="container">
                 <div class="row m-0">
                     <div class="col-md-6 p-0">
+                        @if(getenv('COMPANY_DOMAIN') == 'legalinjuryadvocates.com')
                         <p>Site Sponsored by Young & Partners, LLP</p>
+                        @endif
                         <p>{{ getenv('COMPANY_NAME') }} &copy; 2019. All Rights Reserved.</p>
                     </div>
-                    <div class="col-md-6 footer-menu p-0"> <a href="#" data-toggle="modal" data-target="#myModal"> Terms
-                            & Conditions</a> <a href="#" data-toggle="modal" data-target="#myModal2"> Privacy Policy</a>
-                        <a href="mailto:info@legalinjuryadvocates.com"> Contact Us</a>
+                    <div class="col-md-6 footer-menu p-0">
+                        <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/terms" target="_blank"> Terms & Conditions</a>
+                        <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/privacy" target="_blank"> Privacy Policy</a>
+                        <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/contact" target="_blank"> Contact Us</a>
+                        <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/ccpa" target="_blank"> CCPA</a>
                     </div>
                     <div class="col-md-12 p-0 footer-paragraph">
                         <p> {{ __('lander.this_is_an_advertisement') }} </p>

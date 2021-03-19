@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    
+
     @if(env('FACEBOOK_ACCOUNT_ID', null) !== null)
         <!-- Facebook Pixel Code -->
         <script>
@@ -26,7 +26,7 @@
         </noscript>
         <!-- End Facebook Pixel Code -->
     @endif
-    
+
     @if(env('FACEBOOK_ACCOUNT_ID_2', null) !== null && env('FACEBOOK_ACCOUNT_ID', null) != env('FACEBOOK_ACCOUNT_ID_2', null))
         <!-- Facebook Pixel Code -->
         <script>
@@ -58,7 +58,7 @@
         <div class="row all-set-images">
             <div class="col-md-12 text-set">
                 <h3> YOU'RE ALL SET! </h3>
-                <p class="first-text"> You will receive an important phone call from Young & Partners Law Firm as soon<br/>
+                <p class="first-text"> You will receive an important phone call soon<br/>
                     as possible. Please do not contact another law firm before we talk with you. You<br/>
                     may not recognize the phone number but please pick it up so we can help you. </p>
                 <p class="second-text"> There is NO charge to you for exploring your options and absolutely no obligations!<br/>
