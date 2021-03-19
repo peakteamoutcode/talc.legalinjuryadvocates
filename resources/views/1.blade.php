@@ -72,11 +72,10 @@
             </div>
             <div class="col-xs-12 col-sm-6">
                 <ul>
-                    <li><a href="https://legalinjuryadvocates.com/terms" target="_blank"  style="color: #ffffff">Terms &amp; Conditions</a></li>
-                    <li><a href="https://legalinjuryadvocates.com/privacy" target="_blank"  style="color: #ffffff">Privacy Policy</a></li>
-                    <li><a href="mailto:info@legalinjuryadvocates.com" style="color: #ffffff">Contact Us</a></li>
-                    <li><a href="https://legalinjuryadvocates.com/ccpa" style="color: #ffffff">California & Nevada Consumer Privacy Information</a></li>
-                    <li><a href="https://legalinjuryadvocates.com/do-not-sell" style="color: #ffffff">Do Not Sell</a></li>
+                    <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/terms" target="_blank"> Terms & Conditions</a>
+                    <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/privacy" target="_blank"> Privacy Policy</a>
+                    <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/contact" target="_blank"> Contact Us</a>
+                    <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/ccpa" target="_blank"> CCPA</a>
                 </ul>
             </div>
         </div>

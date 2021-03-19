@@ -69,21 +69,10 @@
         <div class="footer-bottom">
             <p>Copyright © 2020
             <ul>
-                <li>
-                    <a href="https://legalinjuryadvocates.com/terms">Terms & Conditions</a>
-                </li>
-                <li>
-                    <a href="https://legalinjuryadvocates.com/privacy">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="https://legalinjuryadvocates.com/ccpa">CCPA</a>
-                </li>
-                <li>
-                    <a href="https://legalinjuryadvocates.com/do-not-sell">Do Not Sell</a>
-                </li>
-                <li>
-                    <a href="/contact">Contact Us</a>
-                </li>
+                <li><a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/terms" target="_blank"> Terms & Conditions</a></li>
+                <li><a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/privacy" target="_blank"> Privacy Policy</a></li>
+                <li><a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/contact" target="_blank"> Contact Us</a></li>
+                <li><a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/ccpa" target="_blank"> CCPA</a></li>
             </ul>
         </div>
     </footer>
