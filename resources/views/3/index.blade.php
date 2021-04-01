@@ -96,7 +96,7 @@
                     <p>You may qualify for compensation!</p>
                 </div>
             </div>
-            <form class="claim-form" method="POST" action="{{ route('3.post-lead') }}">
+            <form class="claim-form" method="POST" action="{{ url()->current() }}">
 
                 @csrf
 
