@@ -176,7 +176,7 @@ Route::group(['prefix' => '/1c'], function () {
 
         return redirect()->to('/thanks');
 
-    })->name('3.post-lead');
+    });
 
 });
 
