@@ -91,6 +91,9 @@
     }(window,document,'_initClickagy','script','https://tags.clickagy.com/data.js?rnd=5f11f950c2e11',{"aid":"vffbk82gn13yr","list":"5yuk4l9q4jwx","conv_name":"k9ximaz0u4z","conv_v":"1"});
 </script>
 
+<script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery-ui.min.js"></script>
+
 @yield('body_extra')
 
 </body>
