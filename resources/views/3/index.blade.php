@@ -2,6 +2,51 @@
 
 @section('page_wrapper_classes', 'home-page')
 
+@section('head_extra')
+
+    @if(isset($useXverify) && $useXverify == true)
+        <link rel="stylesheet" type="text/css"  href="https://www.xverify.com/css/ui_tooltip_style.css"  />
+    @endif
+
+@endsection
+
+@section('body_extra')
+
+    @if(isset($useXverify) && $useXverify == true)
+        <script type="text/javascript" src="https://www.xverify.com/js/clients/tbassett4/client.js"></script>
+        <script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery.xverify.plugin.js"></script>
+    @endif
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('label').on("click",function(){
+                $(window).scrollTop(0);
+            });
+
+            @if(isset($useXverify) && $useXverify == true)
+
+            $.xVerifyService({
+                services: {
+                    email: {field: 'xverify_email'},
+                    //phone: {field: 'xverify_phone'},
+                },
+                submitType: 'onChange',
+                formButtons: ['xvButton'],
+            });
+
+            @endif
+
+            $('input').on('focusout', function () {
+
+
+
+            });
+
+        });
+    </script>
+@endsection
+
 @section('content')
 
 
@@ -136,7 +181,7 @@
                             <input type="text" class="big" name="last_name" id="last_name" placeholder="Last Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="number" class="big phone_us" name="phone_cell" id="phone_cell" placeholder="Phone"
+                            <input type="number" class="big phone_us xverify_phone" name="phone_cell" id="phone_cell" placeholder="Phone"
                                 maxlength="14" required>
                             <div class="phone_validation">Phone numbers do not match!</div>
                         </div>
@@ -149,7 +194,7 @@
                                 maxlength="5" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="big" name="email_address" id="email_address" placeholder="Email"
+                            <input type="email" class="big xverify_email" name="email_address" id="email_address" placeholder="Email"
                                 required>
                         </div>
                         <div class="form-group w-full">

@@ -133,8 +133,8 @@ Route::group(['prefix' => '/1'], function () {
 Route::group(['prefix' => '/1c'], function () {
 
     Route::get('/', function () {
-
-        return view('3.index');
+        $useXverify = true;
+        return view('3.index')->with(compact('useXverify'));
     })->name('3.index');
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
@@ -153,14 +153,14 @@ Route::group(['prefix' => '/1c'], function () {
             'phone_cell' => $request->get('phone_cell'),
             'ip_address' => $request->get('ip_address'),
             'lp_request_id' => $request->get('req_id'),
-            'lp_campaign_id' => env('LEADSPEDIA_CAMPAIGN_ID'),
-            'lp_campaign_key' => env('LEADSPEDIA_CAMPAIGN_KEY'),
+            'lp_campaign_id' => '60662c921d025',
+            'lp_campaign_key' => '2G39nxc68bVhzqKZmNgX',
             'lp_s1' => $request->get('s1'),
             'lp_s2' => $request->get('s2'),
             'lp_s3' => $request->get('s3'),
             'lp_s4' => $request->get('s4'),
             'lp_s5' => $request->get('s5'),
-            'path' => '/1'
+            'path' => '/1c'
         ];
 
         $guzzle = new \GuzzleHttp\Client();

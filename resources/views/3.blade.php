@@ -10,6 +10,9 @@
     <link href="/layouts/3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="/layouts/3/css/style.css" rel="stylesheet">
+
+    @yield('head_extra')
+
 </head>
 
 <body>
@@ -87,6 +90,8 @@
     },y=l.getElementsByTagName(c)[0],g.src=k,g.async=1,y.parentNode.insertBefore(g,y)
     }(window,document,'_initClickagy','script','https://tags.clickagy.com/data.js?rnd=5f11f950c2e11',{"aid":"vffbk82gn13yr","list":"5yuk4l9q4jwx","conv_name":"k9ximaz0u4z","conv_v":"1"});
 </script>
+
+@yield('body_extra')
 
 </body>
 
