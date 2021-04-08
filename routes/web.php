@@ -133,7 +133,7 @@ Route::group(['prefix' => '/1'], function () {
 Route::group(['prefix' => '/1b'], function () {
 
     Route::get('/', function () {
-        $phoneNumber = '866-330-5157';
+        $phoneNumber = '888-787-0120';
         $useXverify = true;
         return view('3.index')->with(compact('phoneNumber', 'useXverify'));
     });
