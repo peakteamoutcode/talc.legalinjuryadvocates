@@ -239,10 +239,29 @@ Route::group(['prefix' => '/3'], function () {
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
 
+        $aid = $request->get('aid');
+
+        $campaignId = env('LEADSPEDIA_CAMPAIGN_ID');
+        $campaignKey = env('LEADSPEDIA_CAMPAIGN_KEY');
+
+        //check for DQ
+        if (strtolower($request->get('diagnosed')) == 'no / other' || strtolower($request->get('diagnosed_when')) == 'no' || strtolower($request->get('has_attorney')) == 'yes')
+        {
+            switch ($aid)
+            {
+                //if concussion media switch to overflow accouunt
+                case '21':
+                    $campaignId = '611a9ed8305e4';
+                    $campaignKey = 'wjpYWNXzDtb6rZFfQxHG';
+                    break;
+            }
+        }
+
+
         $postData = [
             'diagnosed' => $request->get('diagnosed'),
             'diagnosed_when' => $request->get('diagnosed_when'),
-            'over_4_years' => $request->get('over_4_years'),
+            'over_4_years' => $request->get('over_4_years'),//removed
             'has_attorney' => $request->get('has_attorney'),
             'first_name' => $request->get('first_name'),
             'last_name' => $request->get('last_name'),
@@ -252,9 +271,9 @@ Route::group(['prefix' => '/3'], function () {
             'phone_home' => $request->get('phone_home'),
             'phone_cell' => $request->get('phone_cell'),
             'ip_address' => $request->get('ip_address'),
-            'lp_request_id' => $request->get('req_id'),
-            'lp_campaign_id' => env('LEADSPEDIA_CAMPAIGN_ID'),
-            'lp_campaign_key' => env('LEADSPEDIA_CAMPAIGN_KEY'),
+            //'lp_request_id' => $request->get('req_id'),
+            'lp_campaign_id' => $campaignId,
+            'lp_campaign_key' => $campaignKey,
             'lp_s1' => $request->get('s1'),
             'lp_s2' => $request->get('s2'),
             'lp_s3' => $request->get('s3'),

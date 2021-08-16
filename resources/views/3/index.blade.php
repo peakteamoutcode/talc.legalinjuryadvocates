@@ -37,7 +37,7 @@
 
             @endif
 
-            $('input').on('focusout', function () {
+            $('input').on('focusout', function () {w
 
 
 
@@ -107,6 +107,7 @@
                 @csrf
 
                 <input type="hidden" name="req_id" value="{{ isset($_GET['req_id']) ? $_GET['req_id'] : '' }}">
+                <input type="hidden" name="aid" value="{{ isset($_GET['aid']) ? $_GET['aid'] : '' }}">
 
                 <input type="hidden" name="ip_address" value="{{ (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'] }}">
 
@@ -124,14 +125,6 @@
                 <input type="hidden" name="has_attorney" value="">
 
                 <div class="form-slide slide-one">
-                    <!-- <p>Have you or a loved one used Talcum Powder / Baby Powder regularly for feminine hygiene
-                        over 4 years?</p> -->
-                        <p>Have you signed a contract with another attorney regarding your Talcum Powder Lawsuit?</p>
-                    <button type="button" id="yes_cont" class="form-btn form-btn-yes">YES</button>
-                    <button type="button" id="no_65" class="form-btn form-btn-no error-no">No</button>
-                    <p class="error-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-                <div class="form-slide slide-two">
                     <div class="progress">
                         <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
                             aria-valuemin="0" aria-valuemax="100" style="width: 25%;">25%
@@ -151,7 +144,7 @@
                     <!-- <button type="button" id="no_65" class="form-btn form-btn-no error-no">No</button> -->
                     <p class="error-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
-                <div class="form-slide slide-three">
+                <div class="form-slide slide-two">
                     <div class="progress">
                         <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
                             aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%
@@ -162,7 +155,7 @@
                     <button type="button" id="years_no" class="form-btn form-btn-no error-no">No</button>
                     <p class="error-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
-                <div class="form-slide slide-four">
+                <div class="form-slide slide-three">
                     <div class="progress">
                         <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
                             aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%
@@ -173,7 +166,7 @@
                     <button type="button" id="claim_no" class="form-btn form-btn-no error-no">No</button>
                     <p class="error-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
-                <div class="form-slide slide-five">
+                <div class="form-slide slide-four">
                     <div class="progress">
                         <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
                             aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%
