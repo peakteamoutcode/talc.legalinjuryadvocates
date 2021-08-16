@@ -118,8 +118,9 @@
                 <input type="hidden" name="has_attorney" value="">
 
                 <div class="form-slide slide-one">
-                    <p>Have you or a loved one used Talcum Powder / Baby Powder regularly for feminine hygiene
-                        over 4 years?</p>
+                    <!-- <p>Have you or a loved one used Talcum Powder / Baby Powder regularly for feminine hygiene
+                        over 4 years?</p> -->
+                        <p>Have you signed a contract with another attorney regarding your Talcum Powder Lawsuit?</p>
                     <button type="button" id="yes_cont" class="form-btn form-btn-yes">YES</button>
                     <button type="button" id="no_65" class="form-btn form-btn-no error-no">No</button>
                     <p class="error-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
