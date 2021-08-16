@@ -214,6 +214,7 @@
             </form>
         </div>
     </div>
+
     <script>
         $('form').submit(function(){
             $('button[type=submit]', this).attr('disabled', 'disabled');
