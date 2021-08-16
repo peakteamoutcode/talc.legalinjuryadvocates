@@ -255,6 +255,17 @@ Route::group(['prefix' => '/3'], function () {
                     $campaignKey = 'wjpYWNXzDtb6rZFfQxHG';
                     break;
             }
+        } else {
+
+            switch ($aid)
+            {
+                //set affiliate campaign ids/keys
+                case '21':
+                    $campaignId = '61095ad073ff9';
+                    $campaignKey = 'hMB3cJb4wdCyk9qZNQ2D';
+                    break;
+            }
+
         }
 
 
