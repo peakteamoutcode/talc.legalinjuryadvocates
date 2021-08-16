@@ -43,6 +43,12 @@
 
             });
 
+            $('form').submit(function(){
+                $('button[type=submit]', this).attr('disabled', 'disabled');
+                setTimeout(function() { $('button[type=submit]').removeAttr("disabled"); }, 3000);
+            });
+
+
         });
     </script>
 @endsection
@@ -214,11 +220,4 @@
             </form>
         </div>
     </div>
-
-    <script>
-        $('form').submit(function(){
-            $('button[type=submit]', this).attr('disabled', 'disabled');
-            setTimeout(function() { $('button[type=submit]').removeAttr("disabled"); }, 3000);
-        });
-    </script>
 @endsection
