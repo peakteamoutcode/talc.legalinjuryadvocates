@@ -161,7 +161,7 @@
                             aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%
                         </div>
                     </div>
-                    <p>Have you signed a contract with another attorney regarding you?</p>
+                    <p>Have you signed a contract with another attorney regarding your Talcum Powder claim?</p>
                     <button type="button" id="claim_yes" class="form-btn form-btn-yes">YES</button>
                     <button type="button" id="claim_no" class="form-btn form-btn-no error-no">No</button>
                     <p class="error-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
