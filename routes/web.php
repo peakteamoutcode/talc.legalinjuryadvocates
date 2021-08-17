@@ -245,7 +245,7 @@ Route::group(['prefix' => '/3'], function () {
         $campaignKey = env('LEADSPEDIA_CAMPAIGN_KEY');
 
         //check for DQ
-        if (strtolower($request->get('diagnosed')) == 'no / other' || strtolower($request->get('diagnosed_when')) == 'no' || strtolower($request->get('has_attorney')) == 'true')
+        if (strtolower($request->get('diagnosed')) == 'no / other' || strtolower($request->get('diagnosed_when')) == 'before 2010' || strtolower($request->get('has_attorney')) == 'true')
         {
             switch ($aid)
             {
