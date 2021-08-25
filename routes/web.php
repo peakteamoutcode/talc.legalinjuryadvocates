@@ -313,7 +313,7 @@ Route::group(['prefix' => '/3'], function () {
 Route::group(['prefix' => '/5'], function () {
 
     Route::get('/', function () {
-        return view('3.index');
+        return view('5.index');
     })->name('5.index');
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
