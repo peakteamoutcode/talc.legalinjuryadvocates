@@ -475,17 +475,18 @@
         <div class="container-fluid footer-section">
             <div class="container">
                 <div class="row m-0">
-                    <div class="col-md-6 p-0">
+                    <div class="col-md-6 col-lg-4 p-0">
                         @if(getenv('COMPANY_DOMAIN') == 'legalinjuryadvocates.com')
                         <p>Site Sponsored by Young & Partners, LLP</p>
                         @endif
                         <p>{{ getenv('COMPANY_NAME') }} &copy; 2019. All Rights Reserved.</p>
                     </div>
-                    <div class="col-md-6 footer-menu p-0">
+                    <div class="col-md-6 col-lg-8 footer-menu p-0">
                         <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/terms" target="_blank"> Terms & Conditions</a>
                         <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/privacy" target="_blank"> Privacy Policy</a>
                         <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/contact" target="_blank"> Contact Us</a>
                         <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/ccpa" target="_blank"> CCPA</a>
+                        <a href="{{asset('layouts/doc/DO-NOT-SELL-MY-INFO.docx')}}" target="_blank">Do Not Sell My Data</a>
                     </div>
                     <div class="col-md-12 p-0 footer-paragraph">
                         <p> {{ __('lander.this_is_an_advertisement') }} </p>

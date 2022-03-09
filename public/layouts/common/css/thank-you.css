@@ -2,3 +2,15 @@
 .call-us-sec a{
     color: #299c5c;
 }
+@media(max-width: 767px){
+    .col-md-6.footer-menu a{
+        width: 100%;
+        padding: 0px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .col-md-6.footer-menu{
+        display: inline-block
+    }
+}
+

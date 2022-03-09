@@ -16,34 +16,36 @@ div.wrapper {
  	width:100%;
 	background:url("../img/talc2.20fb61d62637.jpg") no-repeat center center;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;
 }
+div.footer a{
+    color:#fff;
+}
 
- 
 
 /* Media Queries */
 @media (max-width: 1199px) {
     div.wrapper {
         margin-top: 0px !important;
     }
-	
+
 }
 
 @media (max-width: 991px) {
     div.wrapper {
         margin-top: 0px !important;
     }
-	
-	
+
+
 }
 
 @media (max-width: 767px) {
-	
-	
-	
+
+
+
 }
 
 @media (max-width: 480px) {
-	
-	
+
+
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -275,7 +277,7 @@ div.tcpa {
     button.form-btn {
         font-size: 16px;
     }
-    
+
     .lead-capture form p {
     font-size: 16px;
     font-weight: 500;
@@ -440,7 +442,7 @@ div.bullets ul li:before {
   .ty_msg p a{
     color: white;
   }
-  
+
   @media screen and (max-width:1050px){
       .ty_banner {
           padding: 15px 0;
