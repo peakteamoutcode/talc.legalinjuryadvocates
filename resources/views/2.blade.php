@@ -202,6 +202,7 @@
                     <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/privacy" target="_blank"> Privacy Policy</a>
                     <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/contact" target="_blank"> Contact Us</a>
                     <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/ccpa" target="_blank"> CCPA</a>
+                    <a href="{{asset('layouts/doc/DO-NOT-SELL-MY-INFO.docx')}}" target="_blank">Do Not Sell My Data</a>
                 </div>
                 <div class="col-md-12 p-0 footer-paragraph">
                     <p> This is an advertisement. The Legal Injury Advocate is not a law firm or referral service and does not provide legal advice. This is a free matching service. We do not recommend or endorse any attorneys that pay to participate. An attorney-client relationship is not formed when you submit information through the form. You are under no obligation to retain a lawyer who contacts you through this service. </p>
