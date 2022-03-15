@@ -1,5 +1,15 @@
 <?php
 
+Route::group(['prefix' => '/'], function () {
+
+    Route::get('/', function () {
+        //redirect to default route
+        $defaultPath = env('DEFAULT_PATH', '');
+        return redirect($defaultPath ?: '/1');
+    });
+
+});
+
 Route::group(['prefix' => '/4'], function () {
 
     Route::get('/', function () {
