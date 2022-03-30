@@ -92,12 +92,14 @@ Route::group(['prefix' => '/4'], function () {
 
 Route::group(['prefix' => '/1'], function () {
 
-    Route::get('/', function () {
-
+    Route::get('/', function (\Illuminate\Http\Request $request) {
+        Session::put('cid', $request->get('cid'));
         return view('3.index');
     })->name('3.index');
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
+
+        $cid = Session::get('cid');
 
         $postData = [
             'diagnosed' => $request->get('diagnosed'),
@@ -112,7 +114,7 @@ Route::group(['prefix' => '/1'], function () {
             'phone_home' => $request->get('phone_home'),
             'phone_cell' => $request->get('phone_cell'),
             'ip_address' => $request->get('ip_address'),
-            'lp_request_id' => $request->get('req_id'),
+            'lp_request_id' => (!empty($cid)) ? $cid : $request->get('req_id'),
             'lp_campaign_id' => env('LEADSPEDIA_CAMPAIGN_ID'),
             'lp_campaign_key' => env('LEADSPEDIA_CAMPAIGN_KEY'),
             'lp_s1' => $request->get('s1'),
