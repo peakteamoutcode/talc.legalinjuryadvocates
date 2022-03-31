@@ -94,12 +94,35 @@ Route::group(['prefix' => '/1'], function () {
 
     Route::get('/', function (\Illuminate\Http\Request $request) {
         Session::put('cid', $request->get('cid'));
+
+        switch ($request->get('aid'))
+        {
+            case '32': //AW Performance LLC
+                Session::put('lp_campaign_id', '6244ba77c6fac');
+                Session::put('lp_campaign_key', 'YnZ2RpX3GzcxKJ9THVMj');
+                break;
+            case '30': //Slick Ads Media
+                Session::put('lp_campaign_id', '6244b883850b2');
+                Session::put('lp_campaign_key', 'bXDt2fCchpY4LKGkz3jd');
+                break;
+            case '31': //Scale Up Media Agency Inc
+                Session::put('lp_campaign_id', '6244ba459aa52');
+                Session::put('lp_campaign_key', 'd39XrWbJTxzCq4RNvjtM');
+                break;
+            default:
+                Session::put('lp_campaign_id', env('LEADSPEDIA_CAMPAIGN_ID'));
+                Session::put('lp_campaign_key', env('LEADSPEDIA_CAMPAIGN_KEY'));
+        }
+
         return view('3.index');
     })->name('3.index');
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
 
         $cid = Session::get('cid');
+
+        $lpCampaignId = Session::get('lp_campaign_id');
+        $lpCampaignKey = Session::get('lp_campaign_key');
 
         $postData = [
             'diagnosed' => $request->get('diagnosed'),
@@ -115,8 +138,8 @@ Route::group(['prefix' => '/1'], function () {
             'phone_cell' => $request->get('phone_cell'),
             'ip_address' => $request->get('ip_address'),
             'lp_request_id' => (!empty($cid)) ? $cid : $request->get('req_id'),
-            'lp_campaign_id' => env('LEADSPEDIA_CAMPAIGN_ID'),
-            'lp_campaign_key' => env('LEADSPEDIA_CAMPAIGN_KEY'),
+            'lp_campaign_id' => $lpCampaignId,
+            'lp_campaign_key' => $lpCampaignKey,
             'lp_s1' => $request->get('s1'),
             'lp_s2' => $request->get('s2'),
             'lp_s3' => $request->get('s3'),
