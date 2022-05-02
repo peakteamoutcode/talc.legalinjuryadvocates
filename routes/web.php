@@ -109,6 +109,10 @@ Route::group(['prefix' => '/1'], function () {
                 Session::put('lp_campaign_id', '6244ba459aa52');
                 Session::put('lp_campaign_key', 'd39XrWbJTxzCq4RNvjtM');
                 break;
+            case '8': //FB Moderation
+                Session::put('lp_campaign_id', '5e306b37f0864');
+                Session::put('lp_campaign_key', 'gc6Y7M2FmzDXNQ3yqKdZ');
+                break;
             default:
                 Session::put('lp_campaign_id', env('LEADSPEDIA_CAMPAIGN_ID'));
                 Session::put('lp_campaign_key', env('LEADSPEDIA_CAMPAIGN_KEY'));
