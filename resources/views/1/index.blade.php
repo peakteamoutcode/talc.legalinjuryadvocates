@@ -1,9 +1,9 @@
 @extends('1')
 
 @section('content')
-    
-    
-    
+
+
+
     <div class="row">
         <div class="col-xs-12">
             <div>
@@ -52,16 +52,7 @@
                                         @csrf
 
                                         <input type="hidden" name="req_id" value="{{ (isset($_GET['req_id'])) ? $_GET['req_id'] : '' }}">
-<<<<<<< HEAD
-                                        
-                                        @if (env("APP_ENV") != "local")
-                                            <input type="hidden" name="ip_address" value="{{ $_SERVER['HTTP_CF_CONNECTING_IP'] }}">
-                                        @endif
-                                        
-                                        
-=======
                                         <input type="hidden" name="ip_address" value="{{ (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : $_SERVER['REMOTE_ADDR'] }}">
->>>>>>> 80c7c8b5f135745dcc3d4016951d8cc8da7c7007
 
                                         <input type="hidden" name="source" value="{{ isset($_GET['source']) ? $_GET['source'] : '' }}">
                                         <input type="hidden" name="s1" value="{{ isset($_GET['s1']) ? $_GET['s1'] : '' }}">
@@ -115,7 +106,7 @@
                                             <div class="grouping">
                                                 <div class="row">
                                                     <div class="col-xs-6">
-                                                        <input type="text" class="big phone_us" name="phone_cell" id="phone_cell" placeholder="Phone" maxlength="14">
+                                                        <input type="text" class="big phone_us xverify_phone" name="phone_cell" id="phone_cell" placeholder="Phone" maxlength="14">
                                                     </div>
                                                     <div class="col-xs-6">
                                                         <input type="text" class="big phone_us" name="phone_home" id="phone_home" placeholder="Confirm Phone" maxlength="14">
@@ -128,7 +119,7 @@
                                                         <input type="text" class="big zip_code" name="zip_code" id="zip_code" placeholder="Zip" maxlength="5">
                                                     </div>
                                                     <div class="col-xs-6">
-                                                        <input type="email" class="big" name="email_address" id="email_address" placeholder="Email">
+                                                        <input type="email" class="big xverify_email" name="email_address" id="email_address" placeholder="Email">
                                                     </div>
                                                 </div>
                                             </div>
