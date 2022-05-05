@@ -15,6 +15,7 @@
 
     <!-- Custom CSS -->
     <link href="/layouts/1/sm/css/talc2.49fd75d6a377.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href="https://www.xverify.com/css/ui_tooltip_style.css"  />
 
 </head>
 <body>
@@ -106,6 +107,22 @@
 <script src="/layouts/1/sm/js/basic_form_validation.ad2781474e72.js"></script>
 
 <script src="/layouts/1/sm/js/form_methods/talc2.7a9623981b45.js"></script>
+
+<script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://www.xverify.com/js/clients/tbassett4/client.js"></script>
+<script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery.xverify.plugin.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        $.xVerifyService({
+                services: {
+                    email: {fields: ['xverify_email']},
+                    phone: {field: 'xverify_phone'}
+                },
+                submitType: 'onChange'
+            });
+    });
+</script>
 
 @yield('body_extra')
 

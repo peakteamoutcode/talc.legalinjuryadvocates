@@ -181,12 +181,12 @@
                             <input type="text" class="big" name="last_name" id="last_name" placeholder="Last Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="number" class="big phone_us xverify_phone" name="phone_cell" id="phone_cell" placeholder="Phone"
+                            <input type="text" class="big phone_us xverify_phone" name="phone_cell" id="phone_cell" placeholder="Phone"
                                 maxlength="14" required>
                             <div class="phone_validation">Phone numbers do not match!</div>
                         </div>
                         <div class="form-group">
-                            <input type="number" class="big phone_us" name="phone_home" id="phone_home"
+                            <input type="text" class="big phone_us" name="phone_home" id="phone_home"
                                 placeholder="Confirm Phone" maxlength="14" required>
                         </div>
                         <div class="form-group">

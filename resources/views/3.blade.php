@@ -20,7 +20,7 @@
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-TPBPPDK');</script>
     <!-- End Google Tag Manager -->
-
+    <link rel="stylesheet" type="text/css"  href="https://www.xverify.com/css/ui_tooltip_style.css"  />
 </head>
 
 <body>
@@ -111,6 +111,21 @@
 <script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery-ui.min.js"></script>
 
+<script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://www.xverify.com/js/clients/tbassett4/client.js"></script>
+<script type="text/javascript" src="https://www.xverify.com/sharedjs/jquery.xverify.plugin.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        $.xVerifyService({
+                services: {
+                    email: {fields: ['xverify_email']},
+                    phone: {field: 'xverify_phone'}
+                },
+                submitType: 'onChange'
+            });
+    });
+</script>
 @yield('body_extra')
 
 </body>
