@@ -28,7 +28,7 @@
 
             $.xVerifyService({
                 services: {
-                    email: {field: 'xverify_email'},
+                    //email: {field: 'xverify_email'},
                     //phone: {field: 'xverify_phone'},
                 },
                 submitType: 'onChange',
