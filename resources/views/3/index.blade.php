@@ -194,7 +194,7 @@
                                 maxlength="5" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="big xverify_email" name="email_address" id="email_address" placeholder="Email"
+                            <input type="email" class="big" name="email_address" id="email_address" placeholder="Email"
                                 required>
                         </div>
                         <div class="form-group w-full">
