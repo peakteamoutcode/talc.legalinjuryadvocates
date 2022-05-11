@@ -476,10 +476,10 @@
             <div class="container">
                 <div class="row m-0">
                     <div class="col-md-6 col-lg-4 p-0">
-                        @if(getenv('COMPANY_DOMAIN') == 'legalinjuryadvocates.com')
+                        {{-- @if(getenv('COMPANY_DOMAIN') == 'legalinjuryadvocates.com')
                         <p>Site Sponsored by Young & Partners, LLP</p>
-                        @endif
-                        <p>{{ getenv('COMPANY_NAME') }} &copy; 2019. All Rights Reserved.</p>
+                        @endif --}}
+                        <p>{{ getenv('COMPANY_NAME') }} &copy; {{ now()->year }}. All Rights Reserved.</p>
                     </div>
                     <div class="col-md-6 col-lg-8 footer-menu p-0">
                         <a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/terms" target="_blank"> Terms & Conditions</a>
