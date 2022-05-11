@@ -113,7 +113,7 @@ Route::group(['prefix' => '/1'], function () {
                 Session::put('lp_campaign_id', '5e306b37f0864');
                 Session::put('lp_campaign_key', 'gc6Y7M2FmzDXNQ3yqKdZ');
                 break;
-            case '35': //AdMediary
+            case '35': // AdMediary
                 Session::put('lp_campaign_id', '627bd25300744');
                 Session::put('lp_campaign_key', 'yxqFTYvW2LkNBRVmrMjb');
                 break;
