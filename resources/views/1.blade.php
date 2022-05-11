@@ -69,7 +69,7 @@
 
         <div class="row footer" style="background: #00a776">
             <div class="col-xs-12 col-sm-6">
-                <p  style="color: #ffffff">Copyright © 2019 | All rights reserved.</p>
+                <p  style="color: #ffffff">Copyright © {{ now()->year }} | All rights reserved.</p>
             </div>
             <div class="col-xs-12 col-sm-6">
                 <ul>
