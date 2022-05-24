@@ -5,10 +5,123 @@ Route::group(['prefix' => '/'], function () {
     Route::get('/', function () {
         //redirect to default route
         $defaultPath = env('DEFAULT_PATH', '');
-        return redirect($defaultPath ?: '/1');
+        return redirect($defaultPath ?: '/telc');
     });
 
 });
+
+Route::group(['prefix' => '/telc'], function () {
+
+    Route::get('/', function (\Illuminate\Http\Request $request) {
+        Session::put('cid', $request->get('cid'));
+
+        switch ($request->get('aid'))
+        {
+            case '32': //AW Performance LLC
+                Session::put('lp_campaign_id', '6244ba77c6fac');
+                Session::put('lp_campaign_key', 'YnZ2RpX3GzcxKJ9THVMj');
+                break;
+            case '30': //Slick Ads Media
+                Session::put('lp_campaign_id', '6244b883850b2');
+                Session::put('lp_campaign_key', 'bXDt2fCchpY4LKGkz3jd');
+                break;
+            case '31': //Scale Up Media Agency Inc
+                Session::put('lp_campaign_id', '6244ba459aa52');
+                Session::put('lp_campaign_key', 'd39XrWbJTxzCq4RNvjtM');
+                break;
+            case '8': //FB Moderation
+                Session::put('lp_campaign_id', '5e306b37f0864');
+                Session::put('lp_campaign_key', 'gc6Y7M2FmzDXNQ3yqKdZ');
+                break;
+            case '35': // AdMediary
+                Session::put('lp_campaign_id', '627bd25300744');
+                Session::put('lp_campaign_key', 'yxqFTYvW2LkNBRVmrMjb');
+                break;
+            default:
+                Session::put('lp_campaign_id', env('LEADSPEDIA_CAMPAIGN_ID'));
+                Session::put('lp_campaign_key', env('LEADSPEDIA_CAMPAIGN_KEY'));
+        }
+
+        $phoneNumber = '(888) 341-3995';
+
+        return view('talc.index')->with(compact('phoneNumber'));
+    })->name('3.index');
+
+    Route::get('/thankyou', function () {
+        return view('talc.thankyou');
+    })->name('talc.thankyou');
+    
+    Route::post('/', function (\Illuminate\Http\Request $request) {
+
+        $cid = Session::get('cid');
+
+        $lpCampaignId  = '6244ba77c6fac';
+        $lpCampaignKey = 'YnZ2RpX3GzcxKJ9THVMj';
+
+        $postData = [
+            'lp_request_id'   => (!empty($cid)) ? $cid : $request->get('req_id'),
+            'lp_campaign_id'  => $lpCampaignId,
+            'lp_campaign_key' => $lpCampaignKey,
+            'lp_s1'           => $request->get('s1'),
+            'lp_s2'           => $request->get('s2'),
+            'lp_s3'           => $request->get('s3'),
+            'lp_s4'           => $request->get('s4'),
+            'lp_s5'           => $request->get('s5'),
+            'lp_test'         => 1,
+            'diagnosed' => $request->get('diagnosed'),
+            'diagnosed_when'  => $request->get('diagnosed_when'),
+            'over_4_years'    => $request->get('over_4_years'),
+            'has_attorney'    => $request->get('has_attorney'),
+            'lp_response'     => 'JSON',
+            'first_name'      => $request->firstname,
+            'last_name'       => $request->lastname,
+            'phone_home'      => $request->phone,
+            'address'         => $request->address,
+            'address2'        => '',
+            'city'            => $request->city,
+            'state'           => $request->state,
+            'zip_code'        => $request->zip_code,
+            'county'          => '',
+            'country'         => 'US',
+            'email_address'   => $request->email,
+            'comments'        => $request->tellus,
+            'ip_address'      => $request->get('ip_address'),
+            'comments'        => $request->tellus,
+        ];
+
+        //Filter Null values
+        foreach($postData as $key=>$value)
+        {
+         if(is_null($value) )
+            unset($postData[$key]);
+        }
+
+        $guzzle = new \GuzzleHttp\Client();
+
+        //check if qualified lead or not
+
+
+        $postRequest = $guzzle->request('POST', 'https://legalinjurynetwork.leadspediatrack.com/post.do', [
+            'form_params' => $postData
+        ]);
+
+        $postResponse = $postRequest->getBody()->getContents();
+        $jsonObject = json_decode($postResponse);
+
+        if($jsonObject->result =='failed'){
+            if(isset($jsonObject->errors[0]->error)) {
+                return response()->json(array('sms'=>$jsonObject->errors[0]->error));
+            }
+            return response()->json(array('sms'=>0));
+        } else {
+            return response()->json(array('sms'=>1));
+        }
+        return response()->json(array('sms'=>0));
+
+    })->name('talc.post-lead');
+
+});
+
 
 Route::group(['prefix' => '/4'], function () {
 
