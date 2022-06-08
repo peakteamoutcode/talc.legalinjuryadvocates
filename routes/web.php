@@ -235,7 +235,7 @@ Route::group(['prefix' => '/1'], function () {
                 Session::put('lp_campaign_key', env('LEADSPEDIA_CAMPAIGN_KEY'));
         }
 
-        $phoneNumber = '(888) 341-3995';
+        $phoneNumber = '(800) 484-6757';
 
         return view('3.index')->with(compact('phoneNumber'));
     })->name('3.index');
