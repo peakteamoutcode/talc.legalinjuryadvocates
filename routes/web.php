@@ -214,6 +214,10 @@ Route::group(['prefix' => '/1'], function () {
 
         switch ($request->get('aid'))
         {
+            case '38': //William Kenny
+                Session::put('lp_campaign_id', '62a785c01de26');
+                Session::put('lp_campaign_key', 'fFNtL27p8QhyGjgmxKRz');
+                break;
             case '32': //AW Performance LLC
                 Session::put('lp_campaign_id', '6244ba77c6fac');
                 Session::put('lp_campaign_key', 'YnZ2RpX3GzcxKJ9THVMj');
