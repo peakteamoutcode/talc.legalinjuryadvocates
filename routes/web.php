@@ -17,7 +17,6 @@ Route::group(['prefix' => '/telc'], function () {
 
         Session::put('lp_campaign_id', '62a785c01de26');
         Session::put('lp_campaign_key', 'DLmHBNt2PfnTjWhGxdVy');
-        break;
 
         // switch ($request->get('aid'))
         // {
@@ -218,7 +217,6 @@ Route::group(['prefix' => '/1'], function () {
 
         Session::put('lp_campaign_id', '62a785c01de26');
         Session::put('lp_campaign_key', 'DLmHBNt2PfnTjWhGxdVy');
-        break;
 
         // switch ($request->get('aid'))
         // {
