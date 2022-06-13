@@ -15,36 +15,40 @@ Route::group(['prefix' => '/telc'], function () {
     Route::get('/', function (\Illuminate\Http\Request $request) {
         Session::put('cid', $request->get('cid'));
 
-        switch ($request->get('aid'))
-        {
-            case '38': //William Kenny
-                Session::put('lp_campaign_id', '62a785c01de26');
-                Session::put('lp_campaign_key', 'DLmHBNt2PfnTjWhGxdVy');
-                break;
-            case '32': //AW Performance LLC
-                Session::put('lp_campaign_id', '6244ba77c6fac');
-                Session::put('lp_campaign_key', 'YnZ2RpX3GzcxKJ9THVMj');
-                break;
-            case '30': //Slick Ads Media
-                Session::put('lp_campaign_id', '6244b883850b2');
-                Session::put('lp_campaign_key', 'bXDt2fCchpY4LKGkz3jd');
-                break;
-            case '31': //Scale Up Media Agency Inc
-                Session::put('lp_campaign_id', '6244ba459aa52');
-                Session::put('lp_campaign_key', 'd39XrWbJTxzCq4RNvjtM');
-                break;
-            case '8': //FB Moderation
-                Session::put('lp_campaign_id', '5e306b37f0864');
-                Session::put('lp_campaign_key', 'gc6Y7M2FmzDXNQ3yqKdZ');
-                break;
-            case '35': // AdMediary
-                Session::put('lp_campaign_id', '627bd25300744');
-                Session::put('lp_campaign_key', 'yxqFTYvW2LkNBRVmrMjb');
-                break;
-            default:
-                Session::put('lp_campaign_id', env('LEADSPEDIA_CAMPAIGN_ID'));
-                Session::put('lp_campaign_key', env('LEADSPEDIA_CAMPAIGN_KEY'));
-        }
+        Session::put('lp_campaign_id', '62a785c01de26');
+        Session::put('lp_campaign_key', 'DLmHBNt2PfnTjWhGxdVy');
+        break;
+
+        // switch ($request->get('aid'))
+        // {
+        //     case '38': //William Kenny
+        //         Session::put('lp_campaign_id', '62a785c01de26');
+        //         Session::put('lp_campaign_key', 'DLmHBNt2PfnTjWhGxdVy');
+        //         break;
+        //     case '32': //AW Performance LLC
+        //         Session::put('lp_campaign_id', '6244ba77c6fac');
+        //         Session::put('lp_campaign_key', 'YnZ2RpX3GzcxKJ9THVMj');
+        //         break;
+        //     case '30': //Slick Ads Media
+        //         Session::put('lp_campaign_id', '6244b883850b2');
+        //         Session::put('lp_campaign_key', 'bXDt2fCchpY4LKGkz3jd');
+        //         break;
+        //     case '31': //Scale Up Media Agency Inc
+        //         Session::put('lp_campaign_id', '6244ba459aa52');
+        //         Session::put('lp_campaign_key', 'd39XrWbJTxzCq4RNvjtM');
+        //         break;
+        //     case '8': //FB Moderation
+        //         Session::put('lp_campaign_id', '5e306b37f0864');
+        //         Session::put('lp_campaign_key', 'gc6Y7M2FmzDXNQ3yqKdZ');
+        //         break;
+        //     case '35': // AdMediary
+        //         Session::put('lp_campaign_id', '627bd25300744');
+        //         Session::put('lp_campaign_key', 'yxqFTYvW2LkNBRVmrMjb');
+        //         break;
+        //     default:
+        //         Session::put('lp_campaign_id', env('LEADSPEDIA_CAMPAIGN_ID'));
+        //         Session::put('lp_campaign_key', env('LEADSPEDIA_CAMPAIGN_KEY'));
+        // }
 
         $phoneNumber = '(800) 484-6757';
 
@@ -212,36 +216,40 @@ Route::group(['prefix' => '/1'], function () {
     Route::get('/', function (\Illuminate\Http\Request $request) {
         Session::put('cid', $request->get('cid'));
 
-        switch ($request->get('aid'))
-        {
-            case '38': //William Kenny
-                Session::put('lp_campaign_id', '62a785c01de26');
-                Session::put('lp_campaign_key', 'DLmHBNt2PfnTjWhGxdVy');
-                break;
-            case '32': //AW Performance LLC
-                Session::put('lp_campaign_id', '6244ba77c6fac');
-                Session::put('lp_campaign_key', 'YnZ2RpX3GzcxKJ9THVMj');
-                break;
-            case '30': //Slick Ads Media
-                Session::put('lp_campaign_id', '6244b883850b2');
-                Session::put('lp_campaign_key', 'bXDt2fCchpY4LKGkz3jd');
-                break;
-            case '31': //Scale Up Media Agency Inc
-                Session::put('lp_campaign_id', '6244ba459aa52');
-                Session::put('lp_campaign_key', 'd39XrWbJTxzCq4RNvjtM');
-                break;
-            case '8': //FB Moderation
-                Session::put('lp_campaign_id', '5e306b37f0864');
-                Session::put('lp_campaign_key', 'gc6Y7M2FmzDXNQ3yqKdZ');
-                break;
-            case '35': // AdMediary
-                Session::put('lp_campaign_id', '627bd25300744');
-                Session::put('lp_campaign_key', 'yxqFTYvW2LkNBRVmrMjb');
-                break;
-            default:
-                Session::put('lp_campaign_id', env('LEADSPEDIA_CAMPAIGN_ID'));
-                Session::put('lp_campaign_key', env('LEADSPEDIA_CAMPAIGN_KEY'));
-        }
+        Session::put('lp_campaign_id', '62a785c01de26');
+        Session::put('lp_campaign_key', 'DLmHBNt2PfnTjWhGxdVy');
+        break;
+
+        // switch ($request->get('aid'))
+        // {
+        //     case '38': //William Kenny
+        //         Session::put('lp_campaign_id', '62a785c01de26');
+        //         Session::put('lp_campaign_key', 'DLmHBNt2PfnTjWhGxdVy');
+        //         break;
+        //     case '32': //AW Performance LLC
+        //         Session::put('lp_campaign_id', '6244ba77c6fac');
+        //         Session::put('lp_campaign_key', 'YnZ2RpX3GzcxKJ9THVMj');
+        //         break;
+        //     case '30': //Slick Ads Media
+        //         Session::put('lp_campaign_id', '6244b883850b2');
+        //         Session::put('lp_campaign_key', 'bXDt2fCchpY4LKGkz3jd');
+        //         break;
+        //     case '31': //Scale Up Media Agency Inc
+        //         Session::put('lp_campaign_id', '6244ba459aa52');
+        //         Session::put('lp_campaign_key', 'd39XrWbJTxzCq4RNvjtM');
+        //         break;
+        //     case '8': //FB Moderation
+        //         Session::put('lp_campaign_id', '5e306b37f0864');
+        //         Session::put('lp_campaign_key', 'gc6Y7M2FmzDXNQ3yqKdZ');
+        //         break;
+        //     case '35': // AdMediary
+        //         Session::put('lp_campaign_id', '627bd25300744');
+        //         Session::put('lp_campaign_key', 'yxqFTYvW2LkNBRVmrMjb');
+        //         break;
+        //     default:
+        //         Session::put('lp_campaign_id', env('LEADSPEDIA_CAMPAIGN_ID'));
+        //         Session::put('lp_campaign_key', env('LEADSPEDIA_CAMPAIGN_KEY'));
+        // }
 
         $phoneNumber = '(800) 484-6757';
 
