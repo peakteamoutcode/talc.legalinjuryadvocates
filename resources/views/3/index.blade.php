@@ -61,7 +61,7 @@
         <a class="logo" href="#">
             <img src="{{ getenv('COMPANY_WIDE_LOGO_URL') }}" alt="">
         </a>
-        <a class="contact-no" href="tel:{{ isset($phoneNumber) ? $phoneNumber : '(888) 503-5057' }}">CALL NOW: <span>{{ isset($phoneNumber) ? $phoneNumber : '(888) 503-5057' }}</span></a>
+        <a class="contact-no" href="tel:{{ env('PHONE_NUMBER') ? env('PHONE_NUMBER') : '(000) 000-0000' }}">CALL NOW: <span>{{ env('PHONE_NUMBER') ? env('PHONE_NUMBER') : "(000) 000-0000" }}</span></a>
     </div>
     <div class="section-row">
         <div class="section-info">
