@@ -1,7 +1,7 @@
 @extends('talc.layouts.app')
 
 @section('pageTitle')
-{{ 'Question 1 | ' . config('app.name') }}
+{{ 'Question 1 Updated | ' . config('app.name') }}
 @endsection
 @section('content')
 <section class="bg-white">
