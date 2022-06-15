@@ -134,7 +134,7 @@ Route::group(['prefix' => '/4'], function () {
     })->name('1.index');
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
-
+        
         $postData = [
             'diagnosed_when' => $request->get('diagnosed_when'),
             'under_65' => $request->get('under_65'),
@@ -254,6 +254,11 @@ Route::group(['prefix' => '/1'], function () {
 
         $lpCampaignId = Session::get('lp_campaign_id');
         $lpCampaignKey = Session::get('lp_campaign_key');
+
+        if($cid==""){
+            $lpCampaignId="62a785c01de26";
+            $lpCampaignKey="DLmHBNt2PfnTjWhGxdVy";
+        }
 
         $postData = [
             'diagnosed' => $request->get('diagnosed'),
@@ -407,8 +412,8 @@ Route::group(['prefix' => '/3'], function () {
 
         $aid = $request->get('aid');
 
-        $campaignId = env('LEADSPEDIA_CAMPAIGN_ID');
-        $campaignKey = env('LEADSPEDIA_CAMPAIGN_KEY');
+        //$campaignId = env('LEADSPEDIA_CAMPAIGN_ID');
+        //$campaignKey = env('LEADSPEDIA_CAMPAIGN_KEY');
 
         //check for DQ
         if (strtolower($request->get('diagnosed')) == 'no / other' || strtolower($request->get('diagnosed_when')) == 'before 2010' || strtolower($request->get('has_attorney')) == 'true')
@@ -433,6 +438,9 @@ Route::group(['prefix' => '/3'], function () {
             }
 
         }
+
+        $campaignId="62a79ced759c8";
+        $campaignKey="K4rbMtkh6f9NQDHxZyWJ";
 
 
         $postData = [
