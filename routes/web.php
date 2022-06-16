@@ -409,7 +409,7 @@ Route::group(['prefix' => '/3'], function () {
     })->name('3.index');
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
-
+        Log::info('Hits the post 3 request');
         $aid = $request->get('aid');
 
         //$campaignId = env('LEADSPEDIA_CAMPAIGN_ID');
