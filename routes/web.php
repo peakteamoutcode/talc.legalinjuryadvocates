@@ -294,6 +294,11 @@ Route::group(['prefix' => '/1'], function () {
         ]);
 
         $response = $request->getBody()->getContents();
+        echo "<pre>";
+        var_dump($postData);
+        var_dump($response);
+        echo "</pre>";
+        exit;
 
         return redirect()->to('/thanks');
 
