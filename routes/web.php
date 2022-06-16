@@ -54,7 +54,7 @@ Route::group(['prefix' => '/telc'], function () {
     Route::get('/thankyou', function () {
         return view('talc.thankyou');
     })->name('talc.thankyou');
-    
+
     Route::post('/', function (\Illuminate\Http\Request $request) {
 
         $cid = Session::get('cid');
@@ -134,7 +134,7 @@ Route::group(['prefix' => '/4'], function () {
     })->name('1.index');
 
     Route::post('/', function (\Illuminate\Http\Request $request) {
-        
+
         $postData = [
             'diagnosed_when' => $request->get('diagnosed_when'),
             'under_65' => $request->get('under_65'),
@@ -477,7 +477,7 @@ Route::group(['prefix' => '/3'], function () {
         ]);
 
         $response = $request->getBody()->getContents();
-
+        Log::info('Request sent and works fine.');
         return redirect()->to('/thanks');
 
     })->name('3.post-lead');
