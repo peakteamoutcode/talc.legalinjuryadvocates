@@ -557,3 +557,7 @@ Route::get('/ccpa', function () {
 Route::get('/contact', function () {
     return view('3.contact');
 });
+
+Route::get('/do-not-sell-my-info', function () {
+    return view('do-not-sell-my-info');
+});
