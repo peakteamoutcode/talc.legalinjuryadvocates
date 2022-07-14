@@ -169,8 +169,8 @@
 </section>
 <style>
     .footer {
-        margin-top: 100vh;
-        border: 0.125em solid hsla(0, 0%, 20%, 0.95);
+        margin: 10px;
+        border: 0.075em solid black;
         background: hsla(0, 0%, 98%, 0.90);
         padding: 15px 15px 0;
         color: hsla(0, 0%, 18%, 1.00);
@@ -197,7 +197,8 @@
         padding: 20px 15px;
     }
     .footer-bottom p {
-        font-size: 12px;
+        margin: 0px;
+        font-size: 14px;
         color: #ffffff;
         font-weight: 500;
         letter-spacing: 0.02em;
@@ -213,11 +214,14 @@
         border-right: 1px solid #8e8e8e;
         display: inline;
     }
+    .footer-bottom ul li:last-child{
+        border-right: none;
+    }
     .footer-bottom ul li a {
         display: block;
         padding: 0;
         margin: 0;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         color: #ffffff;
     }
