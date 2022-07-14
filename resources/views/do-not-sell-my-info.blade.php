@@ -1,4 +1,4 @@
-@extends('talc.layouts.app')
+@extends('talc.layouts.headernotsellinfo')
 
 @section('pageTitle')
 {{ 'Question 1 | ' . config('app.name') }}
