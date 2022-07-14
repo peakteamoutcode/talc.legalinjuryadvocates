@@ -167,7 +167,92 @@
     </div>
   </div>
 </section>
+<style>
+    .footer {
+        margin-top: 100vh;
+        border: 0.125em solid hsla(0, 0%, 20%, 0.95);
+        background: hsla(0, 0%, 98%, 0.90);
+        padding: 15px 15px 0;
+        color: hsla(0, 0%, 18%, 1.00);
+    }
+    .footer-text {
+        margin: 1em 0 0 0;
+        padding-bottom: 20px;
+    }
+    .footer-text p {
+        margin: 0.25em 0;
+        padding: 0;
+        border: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: left;
+        color: hsla(0, 0%, 18%, 1.00);
+    }
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #00a776;
+        margin: 0 -15px;
+        padding: 20px 15px;
+    }
+    .footer-bottom p {
+        font-size: 12px;
+        color: #ffffff;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+    }
+    
+    .footer-bottom ul {
+        display: flex;
+    }
+    .footer-bottom ul li {
+        list-style: none;
+        padding: 0 5px;
+        margin: 0;
+        border-right: 1px solid #8e8e8e;
+        display: inline;
+    }
+    .footer-bottom ul li a {
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+    
+    @media (max-width: 1199px) {
+        .footer-bottom ul li {
+            margin: 0 6px;
+        }
+    }
 
+    @media (max-width: 991px) {
+        .footer-bottom {
+            flex-direction: column;
+        }
+
+        .footer-bottom p {
+            margin-bottom: 15px;
+        }
+    }
+    
+    .footer-bottom ul li {
+        margin: 0 15px 10px;
+    }
+
+    .footer-bottom ul li a {
+        text-align: center;
+    }
+    .footer-bottom ul li {
+        list-style: none;
+        padding: 0 5px;
+        margin: 0;
+        border-right: 1px solid #8e8e8e;
+        display: inline;
+    }
+</style>
 <footer class="footer">
     <div class="footer-text">
         <p>To the extent that this communication is considered ATTORNEY ADVERTISING (hereinafter collectively referred to as the "{{ getenv('COMPANY_NAME') }}") is responsible for the content of this communication. This communication is designed for general informational purposes only and it does NOT constitute the formation of a lawyer-client relationship. Although {{ getenv('COMPANY_NAME') }} aims to provide useful information, this should not be considered legal advice. While we attempt to provide accurate information, {{ getenv('COMPANY_NAME') }} does not warrant that the information is accurate. {{ getenv('COMPANY_NAME') }} disclaims all liability to any person for any loss caused by errors or omissions in this collection of information. The hiring of a lawyer is an important decision that should not be based solely upon advertisements. NO REPRESENTATION IS MADE REGARDING THE POTENTIAL OUTCOME OF ANY SPECIFIC CASE OR THE QUALITY OF LEGAL SERVICES BEING BETTER THAN YOU COULD FIND ELSEWHERE. Furthermore, by providing your phone number and clicking “Review My Claim” or “Get Your Free Evaluation,” you consent to receive automated calls, emails and text alerts from {{ getenv('COMPANY_NAME') }} and related third parties, and co-counsel/partner firms, providing information about product liability lawsuits, as well as related promotional offers. You agree that {{ getenv('COMPANY_NAME') }} and its partner law firms may contact you about their services at the phone number(s) you submitted even if it is on a National or State Do Not Call List. Calls/texts may employ automated dialing technology and pre-recorded/artificial voice messages. You also consent to our Terms & Conditions and Privacy Policy.</p>
