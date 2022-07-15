@@ -94,7 +94,7 @@
                 <li><a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/privacy" target="_blank"> Privacy Policy</a></li>
                 <li><a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/contact" target="_blank"> Contact Us</a></li>
                 <li><a href="https://info.{{ getenv('COMPANY_DOMAIN') }}/ccpa" target="_blank"> CCPA</a></li>
-                <li><a href="{{asset('layouts/doc/DO-NOT-SELL-MY-INFO.docx')}}" target="_blank">Do Not Sell My Data</a></li>
+                <li><a href="https://talc.{{ getenv('COMPANY_DOMAIN') }}/do-not-sell-my-info" target="_blank"> Do Not Sell My Data</a></li>
             </ul>
         </div>
     </footer>
